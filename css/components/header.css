@@ -5,8 +5,12 @@
     .header .logo{
         display: inline-block;
         text-align: start;
+        align-self: center;
+        width: 40%;
+        height: 15px;
     }
     header .nav{
+        align-self: center;
         text-align-last: justify; /* cia gal nelabai kai mazini width bet pagal dizain vistiek nuo 1000px burgeris eina */
     }
         header .link{
@@ -21,12 +25,14 @@
         }
 
         header .link:first-of-type{
-            color: red;
+            color: #e54b4b
+
         }
         .link:hover{
-            color: red;
+            color: #e54b4b
         }
     .header .socials{
+        align-self: center;
         display: inline-block;
         text-align: end;    
     }
@@ -43,5 +49,6 @@
             
         }
         .social:hover{
-            background-color: red;
+            background-color:#e54b4b;
+            color: white;
         }
