@@ -1,0 +1,32 @@
+.header{
+    width: 100%;
+    padding: 20px 0;
+}
+    .logo{
+        display: inline-block;
+        text-align: start;
+    }
+    .nav{
+        text-align-last: justify; /* cia gal nelabai bet pagal dizain vistiek nuo 100px burgeris eina */
+    }
+        .link{
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #3c4858;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 24px;
+        }
+
+        .link:first-of-type{
+            color: red;
+        }
+        .link:hover{
+            color: red;
+        }
+    .socials{
+        display: inline-block;
+        text-align: end;
+    }
