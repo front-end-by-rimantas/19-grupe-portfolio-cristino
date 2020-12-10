@@ -7,7 +7,7 @@
         text-align: start;
     }
     header .nav{
-        text-align-last: justify; /* cia gal nelabai bet pagal dizain vistiek nuo 100px burgeris eina */
+        text-align-last: justify; /* cia gal nelabai kai mazini width bet pagal dizain vistiek nuo 1000px burgeris eina */
     }
         header .link{
             display: inline-block;
