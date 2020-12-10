@@ -2,14 +2,14 @@
     width: 100%;
     padding: 20px 0;
 }
-    .logo{
+    .header .logo{
         display: inline-block;
         text-align: start;
     }
-    .nav{
+    header .nav{
         text-align-last: justify; /* cia gal nelabai bet pagal dizain vistiek nuo 100px burgeris eina */
     }
-        .link{
+        header .link{
             display: inline-block;
             text-decoration: none;
             text-transform: uppercase;
@@ -20,13 +20,28 @@
             line-height: 24px;
         }
 
-        .link:first-of-type{
+        header .link:first-of-type{
             color: red;
         }
         .link:hover{
             color: red;
         }
-    .socials{
+    .header .socials{
         display: inline-block;
-        text-align: end;
+        text-align: end;    
     }
+       .social{
+            text-decoration: none;
+            border: #3c4858 solid 1px;
+            border-radius: 7px;
+            padding: 5px;
+            color: #3c4858;
+            height: 32px;
+            width: 32px;
+            text-align: center;
+            line-height: 30px;
+            
+        }
+        .social:hover{
+            background-color: red;
+        }
