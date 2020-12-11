@@ -1,23 +1,31 @@
 .projects{
-    background-position: center center;
-    height: 253px;
 }
-    .section-projects{
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-        color: white;
-        align-self: center;
-        
+    .container.projects{
+        background-position: center center;
+        height: 253px;
+        border-radius: 10px;
     }
-        .img-projects{
+        .section-projects{
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            color: #ffffff;
+            align-self: center;
+            line-height: 1.5;
+        }
+            .img-projects{
 
-        }
-        .h3-projects{
-            margin-top: 16px;
-            margin-bottom: 8px;
-        }
-        .h6-projects{
-
-        }
-        
+            }
+            .h3-projects{
+                font-family: "Montserrat", sans-serif;
+                margin-top: 16px;
+                margin-bottom: 8px;
+                font-size: 30px;
+                font-weight: 600;
+            }
+            .h6-projects{
+                font-size: 16px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 400;            
+            }
+            
