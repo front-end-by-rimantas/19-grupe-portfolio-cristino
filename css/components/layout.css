@@ -223,7 +223,7 @@ body {
     }
 
     .col-md-6 {
-        grid-column: aspan 6;
+        grid-column: span 6;
     }
 
     .col-md-7 {

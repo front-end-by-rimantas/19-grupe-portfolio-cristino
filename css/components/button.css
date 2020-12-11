@@ -1,0 +1,56 @@
+a.hero-btn1 {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    float: left;
+    padding: 10px 30px;
+    margin: 15px 8px 8px 0px;
+    background-color: #e54b4b;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 3px 5px 0 rgba(229, 75, 75, 0.3);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    border: 1px solid #e54b4b;
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+    a.hero-btn1:hover {
+        background-color: #F50000;
+    }
+
+a.hero-btn2 {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    float: left;
+    padding: 10px 30px;
+    margin: 15px 8px 0px 0px;
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    color: #F50000;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 3px 5px 0 rgba(229, 75, 75, 0.3);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    border: 1px solid #e54b4b;
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+    a.hero-btn2:hover {
+        background-color: #e54b4b;
+        color: #ffffff;
+    }
