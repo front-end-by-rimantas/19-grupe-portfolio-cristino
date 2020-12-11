@@ -26,6 +26,7 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 /* about */
 /* hobbies */
 /* project done */
+
 .projects{
 }
     .container.projects{
@@ -56,6 +57,12 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
                 font-family: "Montserrat", sans-serif;
                 font-weight: 400;            
             }
+
+    @media (max-width: 1200px){
+        .container.projects{
+            height: 410px;
+        }
+
 /* services */
 /* resume */
 /* skill */
