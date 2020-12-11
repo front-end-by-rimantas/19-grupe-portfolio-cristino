@@ -42,8 +42,10 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
             align-self: center;
             line-height: 1.5;
         }
-            .img-projects{
-
+            .icon-projects{
+                color: #e54b4b;
+                height: 32px;
+                width: 32px;
             }
             .h3-projects{
                 font-family: "Montserrat", sans-serif;
