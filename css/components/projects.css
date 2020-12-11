@@ -1,3 +1,23 @@
 .projects{
     background-position: center center;
+    height: 253px;
 }
+    .section-projects{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        color: white;
+        align-self: center;
+        
+    }
+        .img-projects{
+
+        }
+        .h3-projects{
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+        .h6-projects{
+
+        }
+        
