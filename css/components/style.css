@@ -1,7 +1,14 @@
 /* hobbies & interests start */
 
+/* nesugaudyti auksciai raudono shuduko po hobbies&interests,
+nera vidurio uzraso ir raudono shuduko,
+coffee ir music kazkodel skiriasi sriftas,
+nera tarpo tarp ikonu ir hobiu pavadinimu,
+ivedant srifta h6 ikonu pavadinimams sumazeja dydis, reikia 26px,
+ikonas nepasiima su nuoroda is icons.css, dabar padaryta rankiniu budu, o nuororos kiekvieno uzkomentuotos htmle  */
+
 .rounded-pill {
-  border-radius: 30px !important;
+  border-radius: 30px;
 }
 
 body {
@@ -16,21 +23,13 @@ h2, h4, h6, .h2, .h4, .h6 {
   line-height: 1.5;
   font-weight: 600;
 }
-/* originale yra h6 hobbies su 16px, padaryta h4 irgi su 16 px */
-h6 {
+/* originale yra h6 hobbies su 16px, padaryta h4 irgi su 16 px nes su h6 griuna*/
+/* h6 { 
     display: block;
     font-size: 16px;
     margin-top: 0px;
     margin-block-start: 2.33em;
     margin-block-end: 2.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-/* h4 { 
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 } */
