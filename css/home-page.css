@@ -26,6 +26,67 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 /* header */
 /* hero */
 /* about */
+.align-items-center {
+    align-items: center;
+}
+.about__hero {
+    /* height: auto; */
+    position: relative;
+    /* padding: 0 0 126% 0; */
+}
+
+.about__hero-image {
+    max-width: 90%;
+    position: relative;
+    margin-left: 14px;
+    z-index: 1;
+}
+
+.about__hero::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 3%;
+    left: 3%;
+    bottom: 0%;
+    border-radius: 7px;
+    border: 16px solid #e9ecef;    
+}
+
+.about__content {
+    margin-left: 45px;
+    align-self: center;
+}
+
+.about__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #e54b4b;
+}
+
+.about__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #161c2d;
+}
+
+.about__subtitle > span {
+    color: #e54b4b;
+}
+
+.about__text {
+    font-size: 15px;
+    margin-bottom: 16px;
+    color: #8492a6;
+    line-height: 27px;
+    letter-spacing: 0.43px;
+}
+
+.about__signature {
+    margin-bottom: 24px;
+}
 /* hobbies */
 /* project done */
 /* services */
