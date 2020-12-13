@@ -26,7 +26,7 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 /* header */
 /* hero */
 /* about */
-/* hobbies */
+@import './components/style.css'; /* hobbies */
 /* project done */
 /* services */
 /* resume */

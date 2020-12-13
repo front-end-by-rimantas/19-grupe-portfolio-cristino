@@ -1,0 +1,256 @@
+/* hobbies & interests start */
+
+.rounded-pill {
+  border-radius: 30px !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  color: #161c2d;
+}
+
+h2, h4, h6, .h2, .h4, .h6 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+}
+/* originale yra h6 hobbies su 16px, padaryta h4 irgi su 16 px */
+h6 {
+    display: block;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* h4 { 
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.title-heading .sub-title {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.title-heading .heading {
+    font-weight: 700;
+    font-size: 66px;
+    letter-spacing: 1px;
+}
+
+.para-desc {
+    max-width: 700px;
+  }
+
+.title-heading .para-desc {
+    font-size: 17px;
+}
+
+.title-heading img {
+    height: 200px;
+    border: 5px solid #dee2e6;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.section-title .titles .title {
+  letter-spacing: 1px;
+  font-size: 26px;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+.section-title .titles .title.title-line:after, .section-title .titles .title.title-line:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: calc(50% - 45px);
+  border-radius: 5px;
+  top: 55px;
+  background-color: #e54b4b;
+}
+
+.section-title .titles .title.title-line:before {
+    left: calc(50% + 17px);
+  }
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.section-title .titles span {
+  position: absolute;
+  width: 35px;
+  height: 17px;
+  left: calc(50% - 17px);
+}
+
+.section-title .titles span:before, .section-title .titles span:after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 48px;
+  left: 2px;
+  border: 2px solid #e54b4b;
+  border-radius: 30px 30px 30px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.section-title .titles span:after {
+  left: auto;
+  right: 2px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.text-muted {
+    color: #8492a6;
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto;
+}
+
+.mr-auto, .mx-auto {
+    margin-right: auto;
+}
+
+.mb-0, .my-0 {
+    margin-bottom: 0;
+}
+
+p {
+    letter-spacing: 0.03em;
+    line-height:  1.8;
+    margin-top: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .mt-60 {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 60px 0;
+  }
+  .title-heading .heading {
+      font-size: 40px;
+  }
+  .section-title .title {
+      font-size: 24px;
+  }
+}
+ 
+.interests-desc:hover .icon {
+    color: #e54b4b;
+  }
+
+.interests-desc {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.interests-desc .hobbies:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 55px;
+  background: #e9ecef;
+  z-index: 1;
+}
+
+.interests-desc .icon {
+  width: 40px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.interests-desc .title {
+  font-weight: 500;
+}
+
+.interests-desc:hover {
+    background: #ffffff;
+    -webkit-box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+            box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.bg-light {
+    background-color: #f9fafd;
+}
+
+ html {  
+    -webkit-tap-highlight-color: transparent;
+} 
+
+.rounded {
+    border-radius: 7px;
+  }
+
+  .pb-3, .py-3 {
+      padding-bottom: 1rem;
+  }
+
+  .pt-3, .py-3 {
+      padding-top: 1rem;
+  }
+
+  .pl-2, .px-2 {
+      padding-left: .5rem;
+  }
+
+  .pr-2, .px-2 {
+      padding-right: .5rem;
+  }
+
+.position-relative {
+    position: relative;
+}
+
+/* hobbies & interests end */
