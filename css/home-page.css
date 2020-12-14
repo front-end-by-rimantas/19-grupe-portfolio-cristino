@@ -2,6 +2,7 @@
 @import './components/reset.css';
 @import './components/layout.css';
 /* 3rd party components */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 /* your components */
 @import './components/button.css';
 @import './components/faq.css';
