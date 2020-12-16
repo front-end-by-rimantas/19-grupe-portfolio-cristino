@@ -148,7 +148,54 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
         padding-top: 7px;
         font-size: 22px;
         color: #161c2d;
-    } 
+    }
+.resume__timeline {
+    position: relative;
+}
+    .resume__timeline::after {
+        background-color: #ced4da !important;
+        content: "";
+        height: 95%;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 2px;
+    }
+
+.description-block {
+    padding: 24px;
+    border: 1px solid #e9ecef;
+}
+
+.description-block__title {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #161c2d;
+}
+
+.description-block__subtitle {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.2px;
+    margin-bottom: 16px;
+}
+
+.description-block__text {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.2px;
+}
+
+
 /* skill */
 /* portfolio */
 /* testimonial */
