@@ -130,6 +130,25 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 /* services */
 /* resume */
+.resume {
+    width: 100%;
+}
+.resume__icon {
+    border: 2px solid #ced4da;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .resume__icon .far {
+        padding-top: 7px;
+        font-size: 22px;
+        color: #161c2d;
+    } 
 /* skill */
 /* portfolio */
 /* testimonial */
