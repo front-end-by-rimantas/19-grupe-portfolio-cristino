@@ -147,65 +147,80 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     .services .services-title{
         text-align: center;
     }
-        .services-title .services-h4{
-            text-transform: uppercase;
-            font-family: "Montserrat", sans-serif;
-            line-height: 1.5;
-            font-weight: 600;
-            letter-spacing: 1px;
-            font-size: 24px;
-        }
-        .services-title .services-text {
-            color: #8492a6;
-            letter-spacing: 0.03em;
-            line-height: 1.8;
-            font-family: "Roboto", sans-serif;
-            font-size: 15px;
-            font-weight: 400;
-            /* max-width: 700px; */
-        }
-    .services .services-cube{
+            .services-title .services-h4{
+                text-transform: uppercase;
+                font-family: "Montserrat", sans-serif;
+                line-height: 1.5;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 24px;
+            }
+            .services-title .services-text {
+                color: #8492a6;
+                letter-spacing: 0.03em;
+                line-height: 1.8;
+                font-family: "Roboto", sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+            } 
+        .services .services-cube{
         text-align: center;
-        height: 278px;
-        width: 350px;
         border: 1px solid #e9ecef;
         border-radius: 7px;
         position: relative;
-        margin: 20px 20px 0 0;
-        
-        
+        margin: 20px 20px 0 0;          
+        }
+            .services-cube .cube-container{
+                padding: 40px 20px;
+            }
+                .services .cube-icon{
+                    color: #e54b4b;
+                    height: 32px;
+                    width: 32px;
+                }
+                .services .cube-h5{
+                    margin: 20px 0;
+                    font-size: 18px;
+                    font-family: "Montserrat", sans-serif;
+                    line-height: 1.5;
+                    color: #161c2d;
+                    font-weight: 500;
+                    
+                }
+                .services .cube-text{
+                    color: #8492a6;
+                    letter-spacing: 0.03em;
+                    line-height: 1.8;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 15px;
+                    letter-spacing: 0.03em;
+                }
+                .services .cube-icon-grow{
+                    color: #e54b4b;
+                    position: absolute;
+                    right:0;
+                    bottom: 0;
+                    opacity: 0.04;
+                }
+                .services-cube:hover .cube-icon-grow{
+                    height:200px;
+                    width: 200px;
+                    transition: all 1s;
+                }
+    .services-cube:hover .cube-icon-grow{
+        height:200px;
+        width: 200px;
+        transition: all 1s;
+    }
+    .services-cube:hover .cube-h5{
+        transition: all 0.5s;
+        color: #e54b4b;
     }
     .services .services-cube:hover{
         box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
         transform: translateY(-5px);
         border-color: transparent; 
     }
-        .services .cube-icon{
-            color: #e54b4b;
-        }
-        .services .cube-h5{
-            margin: 20px 0;
-            
-        }
-        .services .cube-text{
-            color: #8492a6;
-            letter-spacing: 0.03em;
-            line-height: 1.8;
-            font-family: "Roboto", sans-serif;
-            font-size: 15px;
-        }
-        .services .cube-icon-grow{
-            color: #e54b4b;
-            position: absolute;
-            right:0;
-            bottom: 0;
-            opacity: 0.04;
-        }
-         .services-cube:hover .cube-icon-grow{
-            height:200px;
-            width: 200px;
-            transition: all 1s;
-        }
 
 
 
