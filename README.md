@@ -28,5 +28,6 @@ Design: [cristino](http://shreethemes.in/cristino/layouts/index.html)
 [Tadas](https://github.com/7traders)
 [Donatas](https://github.com/DonatasGr)
 [Sarunas](https://github.com/SarunasCeponis)
+[Raimundas](https://github.com/rokmanas)
 ## Sensei
 [Rimantas](https://github.com/belauzas)
