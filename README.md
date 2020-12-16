@@ -5,13 +5,13 @@
 
 
 # Portfolio
-### 19 group portfolio website project
+### 19 group cristino website project
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
-Site published at https://front-end-by-rimantas.github.io/19-grupe-portfolio/
+Site published at https://front-end-by-rimantas.github.io/19-grupe-portfolio-cristino/
 
-Design: [React theme five](https://react.theme-land.com/theme-five)
+Design: [cristino](http://shreethemes.in/cristino/layouts/index.html)
 
 
 ## Project features
@@ -23,4 +23,10 @@ Design: [React theme five](https://react.theme-land.com/theme-five)
 - no AJAX (data sending)
 
 ## Authors
+[Jezy](https://github.com/Gurar)
+[Eristida](https://github.com/Eristid)
+[Tadas](https://github.com/7traders)
+[Donatas](https://github.com/DonatasGr)
+[Sarunas](https://github.com/SarunasCeponis)
+## Sensei
 [Rimantas](https://github.com/belauzas)
