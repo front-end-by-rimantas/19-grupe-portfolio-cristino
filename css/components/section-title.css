@@ -1,38 +1,29 @@
 .section-title {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: block;
     width: 100%;
-    padding-top: 100px;
-    margin-bottom: 30px;
+    text-align: center; 
+    margin: 100px 0 30px;
 }
 
-h2.section-title {
-    width: 100%;
+.header-section-title {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     letter-spacing: 1px;
     line-height: 1.5;
     text-transform: uppercase;
-    text-align: center;
     color: #161c2d;
-    margin: 0;
-    padding: 0;
 }
 
 .section-title-decoration {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
+    margin: 20px 0;
 }
 
-p.section-title {
-    max-width: 700px;
+.paragraph-section-title {
+    max-width: 750px;
+    margin: auto;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
     line-height: 1.8;
-    text-align: center;
     color: #8492a6;
-    padding: 0;
 }
