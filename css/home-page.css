@@ -143,6 +143,7 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 /* services */
 .container.services{
     padding: 100px 0;
+    background-color: #f9fafd
 }
     .services .services-title{
         text-align: center;
@@ -201,6 +202,9 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
                     right:0;
                     bottom: 0;
                     opacity: 0.04;
+                    height: 32px;
+                    width: 32px;
+                    transition: all 1s;
                 }
                 .services-cube:hover .cube-icon-grow{
                     height:200px;
