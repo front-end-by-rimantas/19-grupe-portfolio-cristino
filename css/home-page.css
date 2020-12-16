@@ -144,10 +144,10 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 .container.services{
     padding: 100px 0;
 }
-    .services .section-tittle{
+    .services .services-title{
         text-align: center;
     }
-        .services .services-h4{
+        .services-title .services-h4{
             text-transform: uppercase;
             font-family: "Montserrat", sans-serif;
             line-height: 1.5;
@@ -155,7 +155,7 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
             letter-spacing: 1px;
             font-size: 24px;
         }
-        .services .services-text {
+        .services-title .services-text {
             color: #8492a6;
             letter-spacing: 0.03em;
             line-height: 1.8;
@@ -164,6 +164,9 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
             font-weight: 400;
             /* max-width: 700px; */
         }
+    .cube{
+        text-align: center;
+    }
 
 /* resume */
 /* skill */
