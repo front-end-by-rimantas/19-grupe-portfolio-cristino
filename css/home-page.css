@@ -153,7 +153,7 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     position: relative;
 }
     .resume__timeline::after {
-        background-color: #ced4da !important;
+        background-color: #ced4da;
         content: "";
         height: 95%;
         left: 0;
@@ -177,13 +177,16 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
         margin-bottom: 0;
     }
 
-    .resume__timeline-item:nth-child(2) .date-label{
+    .resume__timeline-item:nth-child(2n) .row > :first-of-type{
+        order: 2;
+    }
+
+    .resume__timeline-item:nth-child(2n) .date-label{
         float: left;
     }
 
-    .resume__timeline-item:nth-child(2) .description-block{ 
-        margin-right: 15px;
-    }
+    
+
 
 
 .date-label {
