@@ -1,0 +1,29 @@
+.section-title {
+    display: block;
+    width: 100%;
+    text-align: center; 
+    margin: 100px 0 30px;
+}
+
+.header-section-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #161c2d;
+}
+
+.section-title-decoration {
+    margin: 20px 0;
+}
+
+.paragraph-section-title {
+    max-width: 750px;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    color: #8492a6;
+}
