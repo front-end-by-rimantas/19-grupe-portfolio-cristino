@@ -5,8 +5,10 @@ class Projects{
         this.selector = params.selector;
         this.data = params.data;
         this.containerDOM = null;
+        this.sectionDOMs = null
 
         this.initialize();
+        
     }
 
     initialize(){
@@ -16,14 +18,13 @@ class Projects{
         {
             console.error('Wrong selector....')
             return false;
-        }
-        
+        }       
         this.render()
+        this.wireEvents()
     }
 
     render(){
         let HTML = "";
-        console.log(this.containerDOM)
         for(let item of this.data)
         {
             HTML += `<div class="section-projects col-xl-3 col-6">
@@ -33,6 +34,60 @@ class Projects{
         }
         
         this.containerDOM.innerHTML = HTML;
+    }
+    
+    wireEvents()
+    {
+        this.sectionDOMs = this.containerDOM.querySelectorAll('.h3-projects')
+
+        addEventListener('scroll', () => {
+            
+            const windBot = scrollY + innerHeight;
+            for (let index = 0; index < this.sectionDOMs.length; index++) {
+                
+                const element = this.sectionDOMs[index];
+
+                if(element.classList.contains('animated'))
+                    continue;
+                
+                const elementBot = element.offsetTop + element.clientHeight - 30; //chaltura nes marginas
+                
+                if(windBot > elementBot){
+                    element.classList.add('animated')
+                    this.runAnimation(element, index)
+                }
+            }
+
+        })
+    }
+    runAnimation(el,idx)
+    {
+        let numb = 0;
+
+        if(this.data[idx].h3 < 50)
+        {
+            const timer = setInterval(() =>{
+                el.innerText = (numb++ * 2)
+                if(Number(el.innerText) > this.data[idx].h3)
+                {
+                    el.innerText = this.data[idx].h3
+                    clearInterval(timer)
+                }
+                    
+            }, 70)
+        }
+        else
+        {
+            const timer = setInterval(() =>{
+                el.innerText = (numb++ * 7);
+                if(Number(el.innerText) > this.data[idx].h3)
+                {
+                    el.innerText = this.data[idx].h3
+                    clearInterval(timer)
+                }            
+            }, 1)
+        }
+
     }
 }
 
