@@ -210,11 +210,6 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
                     width: 32px;
                     transition: all 1s;
                 }
-                .services-cube:hover .cube-icon-grow{
-                    height:200px;
-                    width: 200px;
-                    transition: all 1s;
-                }
     .services-cube:hover .cube-icon-grow{
         height:200px;
         width: 200px;
@@ -229,7 +224,30 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
         transform: translateY(-5px);
         border-color: transparent; 
     }
-
+    .services .services-cube:before{
+        border-bottom: 2px solid #e54b4b;
+        content: "";
+        width: 0%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+    }
+    .services .services-cube:after{
+    border-bottom: 2px solid #e54b4b;
+    content: "";
+    width: 0%;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    }
+    .services .services-cube:hover::before{
+        width: 45%;
+        transition: all 1s;
+    }
+    .services .services-cube:hover::after{    
+        width: 45%;
+        transition: all 1s;
+    }
 
 
 /* resume */
