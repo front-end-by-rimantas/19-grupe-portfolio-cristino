@@ -7,6 +7,8 @@ ALL IMPORTS
 /* about */
 /* hobbies */
 /* project done */
+import{Projects} from './components/Projects.js';
+import {projectsData} from './data/ProjectsData.js';
 /* services */
 /* resume */
 /* skill */
@@ -29,6 +31,10 @@ EXECUTION
 /* about */
 /* hobbies */
 /* project done */
+new Projects({
+    selector: '.container.projects > .row',
+    data: projectsData
+});
 /* services */
 /* resume */
 /* skill */
