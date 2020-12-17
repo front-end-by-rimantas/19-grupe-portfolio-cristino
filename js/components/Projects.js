@@ -20,7 +20,7 @@ class Projects{
             return false;
         }       
         this.render()
-        this.wireEvents()
+        this.fireEvents()
     }
 
     render(){
@@ -36,7 +36,7 @@ class Projects{
         this.containerDOM.innerHTML = HTML;
     }
     
-    wireEvents()
+    fireEvents()
     {
         this.sectionDOMs = this.containerDOM.querySelectorAll('.h3-projects')
 
@@ -72,8 +72,7 @@ class Projects{
                 {
                     el.innerText = this.data[idx].h3
                     clearInterval(timer)
-                }
-                    
+                }              
             }, 70)
         }
         else
