@@ -131,14 +131,20 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 /* services */
 /* resume */
 .resume {
+    padding-top: 100px;
+    padding-bottom: 100px;
     width: 100%;
 }
+
+.resume .section-title {
+    margin: 0 0 30px 0;
+}
+
 .resume__icon {
     border: 2px solid #ced4da;
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,54 +155,38 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
         font-size: 22px;
         color: #161c2d;
     }
-.resume__timeline {
-    position: relative;
+
+
+    .resume__timeline {
+        position: relative;
+        margin-left: 19px;
+    }
+        .resume__timeline::after {
+            background-color: #ced4da;
+            content: "";
+            height: 95%;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 2px;
+        }
+
+.resume__timeline-item:first-of-type {
+    padding-top: 32px;
+ }
+
+.resume__timeline-item {
+    display: inline-block;
+    margin-bottom: 24px;
 }
-    .resume__timeline::after {
-        background-color: #ced4da;
-        content: "";
-        height: 95%;
-        left: 0;
-        margin: auto;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 2px;
-    }
 
-    .resume__timeline-item:first-of-type {
-        padding-top: 32px;
-    }
-
-    .resume__timeline-item {
-        display: inline-block;
-        margin-bottom: 24px;
-    }
-
-    .resume__timeline-item:last-of-type {
-        margin-bottom: 0;
-    }
-
-    .resume__timeline-item:nth-child(2n) .row > :first-of-type{
-        order: 2;
-    }
-
-    .resume__timeline-item:nth-child(2n) .date-label{
-        float: left;
-    }
-
-    .resume__timeline-item:nth-child(2n) .date-label::after{
-        left: -34px;
-    }
-
-    .resume__timeline-item:nth-child(2n) .description-block {
-        direction:rtl;
-        margin-left: 0;
-        margin-right: 15px;
-    }
+.resume__timeline-item:last-of-type {
+     margin-bottom: 0;
+ }
 
 .date-label {
-    float: right;
+    float: left;
     border: 1px solid #e9ecef;
     border-radius: 10px;
     padding: 8px 24px;
@@ -209,10 +199,10 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     border: 2px solid #161c2d;
     content: "";
     position: absolute;
-    top: 9px;
-    right: -34px;
-    width: 12px;
-    height: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
     z-index: 1;
     background-color: #f8f9fa;
     border-radius: 30px;
@@ -223,10 +213,14 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     border: 1px solid #e9ecef;
     border-radius: 10px;
     margin-left: 15px;
+    position: relative;
+    top: 0;
 }
 
 .description-block:hover {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    transition: all 0.2s ease-out;
+    top: -4px;
 }
 
 .description-block:hover .description-block__title {
@@ -259,6 +253,51 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     font-weight: 400;
     line-height: 25.3px;
     color: #8492a6;
+}
+
+@media screen and (max-width: 767px) {
+    .date-label:after {
+        left: -21px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .resume__icon {
+        margin: 0 auto;
+    }
+    
+    .resume__timeline {
+        margin-left: 0;
+    }
+        .resume__timeline::after {
+            margin: auto;
+        }
+    
+        .resume__timeline-item:nth-child(2n) .row > :first-of-type{
+            order: 2;
+        }
+    
+        .resume__timeline-item:nth-child(2n) .date-label{
+            float: left;
+        }
+    
+        .resume__timeline-item:nth-child(2n) .date-label::after{
+            left: -32px;
+        }
+    
+        .resume__timeline-item:nth-child(2n) .description-block {
+            direction:rtl;
+            margin-left: 0;
+            margin-right: 15px;
+        }
+
+    .date-label {
+        float: right;
+    }
+
+    .date-label:after {
+        right: -32px;
+    }
 }
 
 
