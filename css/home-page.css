@@ -143,32 +143,9 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 /* services */
 .container.services{
-    padding: 100px 0;
+    padding-bottom: 100px;
     background-color: #f9fafd
 }
-    .services .services-title{
-        text-align: center;
-    }
-            .services-title .services-h4{
-                text-transform: uppercase;
-                font-family: "Montserrat", sans-serif;
-                line-height: 1.5;
-                font-weight: 600;
-                letter-spacing: 1px;
-                font-size: 24px;
-            }
-            .services-title .services-icon{
-                font-size: xx-large;
-                color: goldenrod;
-            }
-            .services-title .services-text {
-                color: #8492a6;
-                letter-spacing: 0.03em;
-                line-height: 1.8;
-                font-family: "Roboto", sans-serif;
-                font-size: 15px;
-                font-weight: 400;
-            } 
         .services .services-cube{
         text-align: center;
         border: 1px solid #e9ecef;
