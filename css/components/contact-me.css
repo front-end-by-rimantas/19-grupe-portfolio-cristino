@@ -28,3 +28,36 @@
     color: #8492a6;
 }
 
+.container.contact-me {
+    text-align: center;
+    margin: 30px 15px 0;
+}
+
+h1.contact-me {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #161c2d;
+    text-transform: uppercase;
+    margin: 24px 0 8px;
+}
+
+p.contact-me {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #8492a6;
+    margin: 0 0 16px;
+    letter-spacing: 0.03em;
+}
+
+a.contact-me {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #e54b4b;
+    text-decoration: none;
+    margin: 0 0 16px;
+}
+
+
