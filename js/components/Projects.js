@@ -13,7 +13,6 @@ class Projects{
 
     initialize(){
         this.containerDOM = document.querySelector(this.selector)
-        
         if(!Validator.isValidDOM(this.containerDOM))
         {
             console.error('Wrong selector....')

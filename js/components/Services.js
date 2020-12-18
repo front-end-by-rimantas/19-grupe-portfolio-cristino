@@ -1,6 +1,9 @@
+import {Validator} from '../misc/Validator.js'
+
 class Services{
     constructor(params){
         this.selector = params.selector;
+
         this.data = params.data;
         this.containerDOM = null;
 
@@ -10,14 +13,13 @@ class Services{
 
     initialize(){
         this.containerDOM = document.querySelector(this.selector)
-        
+
         if(!Validator.isValidDOM(this.containerDOM))
         {
             console.error('Wrong selector....')
             return false;
         }       
         this.render()
-        this.fireEvents()
     }
 
     render(){
@@ -36,7 +38,7 @@ class Services{
         </div>`
         }
         
-        this.containerDOM.innerHTML = HTML;
+        this.containerDOM.insertAdjacentHTML('beforeend',HTML)
     }
 }
 
