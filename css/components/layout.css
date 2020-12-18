@@ -347,15 +347,15 @@ body {
         grid-column: span 9;
     }
 
-    .col-sm-10 {
+    .col-xl-10 {
         grid-column: span 10;
     }
 
-    .col-sm-11 {
+    .col-xl-11 {
         grid-column: span 11;
     }
 
-    .col-sm-12 {
+    .col-xl-12 {
         grid-column: span 12;
     }
 }
