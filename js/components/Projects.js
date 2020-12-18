@@ -61,31 +61,17 @@ class Projects{
     }
     runAnimation(el,idx)
     {
-        let numb = 0;
+        let total = 0;
+        let increment = this.data[idx].h3 / 50
 
-        if(this.data[idx].h3 < 50)
-        {
-            const timer = setInterval(() =>{
-                el.innerText = (numb++ * 2)
-                if(Number(el.innerText) > this.data[idx].h3)
-                {
-                    el.innerText = this.data[idx].h3
-                    clearInterval(timer)
-                }              
-            }, 70)
-        }
-        else
-        {
-            const timer = setInterval(() =>{
-                el.innerText = (numb++ * 7);
-                if(Number(el.innerText) > this.data[idx].h3)
-                {
-                    el.innerText = this.data[idx].h3
-                    clearInterval(timer)
-                }            
-            }, 1)
-        }
-
+        const timer = setInterval(() =>{ 
+            el.innerText = Math.floor((total += increment));
+            if(Number(el.innerText) > this.data[idx].h3)
+            {
+                el.innerText = this.data[idx].h3
+                clearInterval(timer)
+            }              
+        }, 1000 / 30 )
     }
 }
 
