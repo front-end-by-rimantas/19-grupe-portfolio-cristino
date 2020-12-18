@@ -26,6 +26,9 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 /* loader */
 /* header */
 /* hero */
+.hero .hero-mouse {
+    bottom: 30px;
+}
 /* about */
 
 .align-items-center {
