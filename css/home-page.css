@@ -143,6 +143,92 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     }
 
 /* services */
+.container.services{
+    padding-bottom: 100px;
+    background-color: #f9fafd
+}
+        .services .services-cube{
+        text-align: center;
+        border: 1px solid #e9ecef;
+        border-radius: 7px;
+        position: relative;
+        margin: 20px 20px 0 0;          
+        }
+            .services-cube .cube-container{
+                padding: 40px 20px;
+            }
+                .services .cube-icon{
+                    color: #e54b4b;
+                    height: 32px;
+                    width: 32px;
+                }
+                .services .cube-h5{
+                    margin: 20px 0;
+                    font-size: 18px;
+                    font-family: "Montserrat", sans-serif;
+                    line-height: 1.5;
+                    color: #161c2d;
+                    font-weight: 500;
+                    
+                }
+                .services .cube-text{
+                    color: #8492a6;
+                    letter-spacing: 0.03em;
+                    line-height: 1.8;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 15px;
+                    letter-spacing: 0.03em;
+                }
+                .services .cube-icon-grow{
+                    color: #e54b4b;
+                    position: absolute;
+                    right:0;
+                    bottom: 0;
+                    opacity: 0.04;
+                    height: 32px;
+                    width: 32px;
+                    transition: all 1s;
+                }
+    .services-cube:hover .cube-icon-grow{
+        height:200px;
+        width: 200px;
+        transition: all 1s;
+    }
+    .services-cube:hover .cube-h5{
+        transition: all 0.5s;
+        color: #e54b4b;
+    }
+    .services .services-cube:hover{
+        box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+        transform: translateY(-5px);
+        border-color: transparent; 
+    }
+    .services .services-cube:before{
+        border-bottom: 2px solid #e54b4b;
+        content: "";
+        width: 0%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+    }
+    .services .services-cube:after{
+    border-bottom: 2px solid #e54b4b;
+    content: "";
+    width: 0%;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    }
+    .services .services-cube:hover::before{
+        width: 45%;
+        transition: all 1s;
+    }
+    .services .services-cube:hover::after{    
+        width: 45%;
+        transition: all 1s;
+    }
+
+
 /* resume */
 /* skill */
 /* portfolio */
