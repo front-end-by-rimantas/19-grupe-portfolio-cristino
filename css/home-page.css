@@ -405,6 +405,34 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 
 /* skill */
+.skill-btn{
+    margin-top: 24px;
+    width: 50%;
+}
+
+.skill-progress-bar{
+    border-bottom: #e9ecef solid 8px;
+    position: relative;
+}
+.skill-progress-bar::after{
+    position: absolute;
+    content: "qq";
+    border-bottom: red solid 8px;
+    width: 83%;
+    left: 0;
+    bottom: -7px;
+}
+.skill-progress-bar:hover::after{
+    position: absolute;
+    content: "qq";
+    border-bottom: red solid 8px;
+    width: 83%;
+    left: 0;
+    bottom: -7px;
+}
+
+
+
 /* portfolio */
 /* testimonial */
 /* blog */
