@@ -26,11 +26,11 @@ const skillsData = [
             },
             {
                 title:"Spanish",
-                skillLevel: 50
+                skillLevel: 70
             },
             {
                 title:"German",
-                skillLevel:25
+                skillLevel:60
             }
         ]
     },
@@ -46,7 +46,7 @@ const skillsData = [
                 skillLevel: 69
             }
         ]
-    }
+    },
 ]
 
 export {skillsData}

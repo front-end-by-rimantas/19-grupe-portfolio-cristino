@@ -7,13 +7,15 @@ class Skills{
         this.data = params.data;
         this.buttonsContainerDOM = null;
         this.grahpsContainerDOM = null;
+        this.firstElementDOM = null;
         
         this.initializeButtons()
+        this.InitializeFirst()
     }
 
     initializeButtons(){
         this.buttonsContainerDOM = document.getElementById(this.selectorButtons)
-        
+         
         if(!Validator.isValidDOM(this.buttonsContainerDOM))
         {
             console.error('Wrong selector....')
@@ -23,15 +25,25 @@ class Skills{
         this.fireEventsButtons()
         
         this.renderGrahps(this.data[0])
-        this.fireEventsScroll(this.data[0])
-        
+        this.fireEventsScroll(this.data[0])        
+    }
+
+    InitializeFirst(){
+
+        this.renderGrahps(this.data[0])
+        this.fireEventsScroll(this.data[0])    
     }
 
     renderButtons(){
         let HTML = "";
+        this.data[0].active = true;
+        
         for(let item of this.data)
         {
-            HTML+= `<a href="javascript:void();" id="${item.buttonName}" class="btn btn-primary skill-btn">${item.buttonName}</a>`
+            if(item.active)
+                HTML+= `<button id="${item.buttonName}" class="btn btn-primary skill-btn skill-btn-active">${item.buttonName}</button>`
+            else
+                HTML+= `<button id="${item.buttonName}" class="btn btn-primary skill-btn ">${item.buttonName}</button>`
         }
         this.buttonsContainerDOM.innerHTML += HTML;
     }
@@ -42,6 +54,10 @@ class Skills{
         {
             document.getElementById(item.buttonName).addEventListener('click',()=>{
                 {
+                    
+
+                    this.toggleActive(item)
+                    console.log(item)
                     this.renderGrahps(item);
                     
                     this.fireGraphsAnimation(item.buttonGraphs)
@@ -55,33 +71,43 @@ class Skills{
     {
         addEventListener('scroll', () => {           
             const windBot = scrollY + innerHeight;
-            // console.log(windBot)  
-            const element = document.getElementById('skill-graphs')  
-            const elementBot = element.offsetTop + element.clientHeight - 120;
-                
-            if(element.classList.contains('animated'))
+            const elementBot = this.grahpsContainerDOM.offsetTop + this.grahpsContainerDOM.clientHeight - 120; 
+            
+            if(this.grahpsContainerDOM.classList.contains('animated'))
             return;
 
-                if(windBot > elementBot){    
-                    console.log('as cia');
-                    element.classList.add('animated')            
+                if(windBot > elementBot){
+                    this.grahpsContainerDOM.classList.add('animated')            
                     this.fireGraphsAnimation(data.buttonGraphs)
                    
                 }
-
         })
+    }
+
+    toggleActive(item){
+        for(let itm of this.data)
+            document.getElementById(itm.buttonName).classList.remove('skill-btn-active')
+        document.getElementById(item.buttonName).classList.add('skill-btn-active')
+        
     }
 
     renderGrahps(item){
 
-        this.grahpsContainerDOM = document.getElementById("skill-graphs")
+        this.grahpsContainerDOM = document.getElementById(this.selectorGraphs)
+
+        if(!Validator.isValidDOM(this.grahpsContainerDOM))
+        {
+            console.error('Wrong selector....')
+            return false;
+        }     
+
         let HTML = "";
         
         for(let itm of item.buttonGraphs)
         {
           HTML += `<div class="skill-progress-bar">
           <div class="skill-progress-visibile">${itm.title}
-              <div id="${itm.title}" class="skill-progress-active">${itm.skillLevel}</div>
+              <div id="${itm.title}" class="skill-progress-active"></div>
           </div>
       </div>`
         }
@@ -90,25 +116,40 @@ class Skills{
     }
 
     fireGraphsAnimation(items){
-        
-        let counter = 0;
-        
+             
         for(let itm of items)
         {
             const graphDOM = document.getElementById(itm.title)
-            const timer = setInterval(() =>{
-                if(counter > itm.skillLevel)
-                clearInterval(timer)
-                counter++
-                graphDOM.style.width = counter + '%'
-            }, 45)
+
+            if(!Validator.isValidDOM(graphDOM))
+            {
+                console.error('Wrong selector....')
+                return false;
+            }    
+
+            this.runAnimation(graphDOM,itm)
         }
-
-
-        
-
     }
+    runAnimation(el,idx)
+    {
+        let total = 0;
+        let increment = idx.skillLevel / 80
 
+        const timer = setInterval(() =>{ 
+            el.style.width = Math.floor((total += increment)) + '%';
+
+            if(total < 10)
+                el.innerHTML = '';
+            else
+                el.innerText = Math.floor(total) +'%';
+
+            if(total >= idx.skillLevel)
+            {
+                el.innerText = idx.skillLevel + '%'
+                clearInterval(timer)
+            }              
+        }, 1000 / 30 )
+    }
 }
 
 export{Skills}
