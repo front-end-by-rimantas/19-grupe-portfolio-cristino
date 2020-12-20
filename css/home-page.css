@@ -444,17 +444,6 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
             width: 0;
             text-align: end;
         }
-    /* .skill-progress-bar::after{
-        position: absolute;
-        content: "";
-        border-bottom: red solid 8px;
-        width: 0%;
-        left: 0;
-        bottom: -7px;
-        text-align: end;
-    } */
-
-
 
 /* portfolio */
 /* testimonial */
