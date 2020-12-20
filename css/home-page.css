@@ -405,21 +405,24 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 
 /* skill */
-.skill-logo{
-    border: #e54b4b 20px solid;
+.skill-logo .img{
+    height: 1000px;
+    width:auto;;
 }
 .skill-right{
     align-self: center;
 }
 
 .skill-buttons{
-    align-self: center;
     margin-right: 50px;
+    margin-left: 200px;
+    /* padding: 0 50px; */
+    
 }
     .skill-btn{
+        width: 100%;
         margin-top: 24px;
         text-align: center;
-        width: 100%;
         border: 1px solid #e9ecef;
         background-color: #ffffff;
         color: #161c2d;
