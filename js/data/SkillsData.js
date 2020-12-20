@@ -1,5 +1,6 @@
 const skillsData = [
     {
+        
         buttonName:"UX Design",
         buttonGraphs: [
             {

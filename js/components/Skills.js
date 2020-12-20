@@ -21,13 +21,17 @@ class Skills{
         }     
         this.renderButtons()
         this.fireEventsButtons()
+        
+        this.renderGrahps(this.data[0])
+        this.fireEventsScroll(this.data[0])
+        
     }
 
     renderButtons(){
         let HTML = "";
         for(let item of this.data)
         {
-            HTML+= `<a href="#" id="${item.buttonName}" class="btn btn-primary skill-btn">${item.buttonName}</a>`
+            HTML+= `<a href="javascript:void();" id="${item.buttonName}" class="btn btn-primary skill-btn">${item.buttonName}</a>`
         }
         this.buttonsContainerDOM.innerHTML += HTML;
     }
@@ -47,6 +51,27 @@ class Skills{
         
     }
 
+    fireEventsScroll(data)
+    {
+        addEventListener('scroll', () => {           
+            const windBot = scrollY + innerHeight;
+            // console.log(windBot)  
+            const element = document.getElementById('skill-graphs')  
+            const elementBot = element.offsetTop + element.clientHeight - 120;
+                
+            if(element.classList.contains('animated'))
+            return;
+
+                if(windBot > elementBot){    
+                    console.log('as cia');
+                    element.classList.add('animated')            
+                    this.fireGraphsAnimation(data.buttonGraphs)
+                   
+                }
+
+        })
+    }
+
     renderGrahps(item){
 
         this.grahpsContainerDOM = document.getElementById("skill-graphs")
@@ -61,7 +86,6 @@ class Skills{
       </div>`
         }
         this.grahpsContainerDOM.innerHTML = HTML
-        console.log(this.grahpsContainerDOM)
         
     }
 
@@ -72,13 +96,12 @@ class Skills{
         for(let itm of items)
         {
             const graphDOM = document.getElementById(itm.title)
-            console.log(graphDOM.style.width)
             const timer = setInterval(() =>{
                 if(counter > itm.skillLevel)
                 clearInterval(timer)
                 counter++
                 graphDOM.style.width = counter + '%'
-            }, 70)
+            }, 45)
         }
 
 
