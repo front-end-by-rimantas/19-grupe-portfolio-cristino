@@ -419,18 +419,22 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     margin-right: 50px;    
 }
     .skill-btn{
-        width: 50%;
-        margin-left: 50%;
-        margin-top: 24px;
+        width: 70%;
+        margin-left: 30%;
+        margin-top: 30px;
         text-align: center;
         border: 1px solid #e9ecef;
         background-color: #ffffff;
         color: #161c2d;
         box-shadow: none; 
         outline:none;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.5;
+        font-weight: 600;
     }
     .skill-btn-active{
         background-color: #e54b4b;
+        color:  #e9ecef;
     }
     .skill-buttons .skill-btn:hover{
         background-color:#e54b4b;
@@ -441,7 +445,6 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
     .skill-progress-bar{
         margin-top: 60px;
-        margin-bottom: 20px;
     }
         .skill-progress-visibile{
             position: relative;
@@ -461,13 +464,19 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
                 position: absolute;
                 left: 97%;
                 bottom: 0%;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
+                font-family: "Montserrat", sans-serif;
+                line-height: 1.5;
+                font-weight: 600;
             }
            .skill-progress-visibile .title{
             position: absolute;
             left: 0%;
             bottom: 0%;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            font-family: "Montserrat", sans-serif;
+            line-height: 1.5;
+            font-weight: 400;
             }
 @media screen and (max-width: 1200px) {
         .skill-btn{
