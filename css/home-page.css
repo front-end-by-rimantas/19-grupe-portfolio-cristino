@@ -405,22 +405,22 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 
 /* skill */
-.skill-logo .img{
-    height: 1000px;
-    width:auto;;
+.skill-logo{
+    background: scroll center no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 .skill-right{
     align-self: center;
+    padding: 100px;
 }
 
 .skill-buttons{
-    margin-right: 50px;
-    margin-left: 200px;
-    /* padding: 0 50px; */
-    
+    margin-right: 50px;    
 }
     .skill-btn{
-        width: 100%;
+        width: 50%;
+        margin-left: 50%;
         margin-top: 24px;
         text-align: center;
         border: 1px solid #e9ecef;
@@ -436,11 +436,12 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
         background-color:#e54b4b;
     }
 .skill-graphs{
-    align-self: end;
+    align-self: center;
 }
 
     .skill-progress-bar{
         margin-top: 60px;
+        margin-bottom: 20px;
     }
         .skill-progress-visibile{
             position: relative;
