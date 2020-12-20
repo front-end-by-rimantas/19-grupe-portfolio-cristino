@@ -412,7 +412,7 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 }
 .skill-right{
     align-self: center;
-    padding: 100px 0;
+    margin-bottom: 300px;
 }
 
 .skill-buttons{
@@ -469,8 +469,31 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
             bottom: 0%;
             margin-bottom: 15px;
             }
-
-
+@media screen and (max-width: 1200px) {
+        .skill-btn{
+            width: 100%;
+            margin-left:0;
+        }
+        .skill-buttons {
+            margin-right: 0px;
+        }
+        .skill-row{
+            padding: 0 100px;
+        }
+        .skill-right{
+            margin-bottom: 0;
+        }
+    }
+@media screen and (max-width: 992px) {
+    .skill-row{
+        padding: 0 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .skill-row{
+        padding: 0 25px;
+    }
+}
 /* portfolio */
 /* testimonial */
 /* blog */
