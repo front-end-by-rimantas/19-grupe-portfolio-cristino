@@ -413,26 +413,46 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
         margin-top: 24px;
         text-align: center;
         width: 100%;
-        
+        border: 1px solid #e9ecef;
+        background-color: #ffffff;
+        color: #161c2d;
+        box-shadow: none; 
+    }
+    .skill-btn:hover{
+        background-color:#ffffff;
     }
 .skill-graphs{
     align-self: end;
 }
+.skill-graphs{
+    align-self: center;
+}
     .skill-progress-bar{
-        border-bottom: #e9ecef solid 8px;
-        position: relative;
         margin: 24px 0;
-        
     }
-    .skill-progress-bar::after{
+        .skill-progress-visibile{
+            position: relative;
+            border-bottom: #e9ecef solid 8px;
+            width: 100%;
+            text-align: start;
+        }
+        .skill-progress-active{
+            position: absolute;
+            bottom: -8px;
+            left:0;
+            border-bottom: #e54b4b solid 8px;
+            width: 0;
+            text-align: end;
+        }
+    /* .skill-progress-bar::after{
         position: absolute;
-        content: "75";
+        content: "";
         border-bottom: red solid 8px;
-        width: 83%;
+        width: 0%;
         left: 0;
         bottom: -7px;
         text-align: end;
-    }
+    } */
 
 
 

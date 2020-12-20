@@ -12,6 +12,8 @@ import {projectsData} from './data/ProjectsData.js';
 /* services */
 /* resume */
 /* skill */
+import { Skills } from './components/Skills.js';
+import {skillsData} from './data/SkillsData.js';
 /* portfolio */
 /* testimonial */
 /* blog */
@@ -38,6 +40,11 @@ new Projects({
 /* services */
 /* resume */
 /* skill */
+new Skills({
+    selectorButtons:'skill-buttons',
+    selectorGraphs: 'skill-graphs',
+    data: skillsData,
+})
 /* portfolio */
 /* testimonial */
 /* blog */
