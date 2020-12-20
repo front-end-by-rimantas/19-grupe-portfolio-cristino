@@ -405,6 +405,13 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 
 /* skill */
+.skill-logo{
+    border: #e54b4b 20px solid;
+}
+.skill-right{
+    align-self: center;
+}
+
 .skill-buttons{
     align-self: center;
     margin-right: 50px;
@@ -417,36 +424,47 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
         background-color: #ffffff;
         color: #161c2d;
         box-shadow: none; 
+        outline:none;
     }
     .skill-btn-active{
         background-color: #e54b4b;
     }
-    .skil-btn:hover{
+    .skill-buttons .skill-btn:hover{
         background-color:#e54b4b;
     }
 .skill-graphs{
     align-self: end;
 }
-.skill-graphs{
-    align-self: center;
-}
+
     .skill-progress-bar{
-        margin: 24px 0;
+        margin-top: 60px;
     }
         .skill-progress-visibile{
             position: relative;
-            border-bottom: #e9ecef solid 8px;
+            border-bottom: #e9ecef solid 10px;
             width: 100%;
             text-align: start;
         }
         .skill-progress-active{
             position: absolute;
-            bottom: -8px;
+            bottom: -10px;
             left:0;
-            border-bottom: #e54b4b solid 8px;
+            border-bottom: #e54b4b solid 10px;
             width: 0;
             text-align: end;
         }
+            .skill-progress-active > .skill-level{
+                position: absolute;
+                left: 97%;
+                bottom: 0%;
+                margin-bottom: 15px;
+            }
+           .skill-progress-visibile .title{
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            margin-bottom: 15px;
+            }
 
 
 /* portfolio */

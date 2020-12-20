@@ -20,7 +20,8 @@ class Skills{
         {
             console.error('Wrong selector....')
             return false;
-        }     
+        }
+
         this.renderButtons()
         this.fireEventsButtons()
         
@@ -54,17 +55,12 @@ class Skills{
         {
             document.getElementById(item.buttonName).addEventListener('click',()=>{
                 {
-                    
-
                     this.toggleActive(item)
-                    console.log(item)
                     this.renderGrahps(item);
-                    
                     this.fireGraphsAnimation(item.buttonGraphs)
                 }
             })
-        }
-        
+        }    
     }
 
     fireEventsScroll(data)
@@ -74,12 +70,11 @@ class Skills{
             const elementBot = this.grahpsContainerDOM.offsetTop + this.grahpsContainerDOM.clientHeight - 120; 
             
             if(this.grahpsContainerDOM.classList.contains('animated'))
-            return;
+                return;
 
                 if(windBot > elementBot){
                     this.grahpsContainerDOM.classList.add('animated')            
-                    this.fireGraphsAnimation(data.buttonGraphs)
-                   
+                    this.fireGraphsAnimation(data.buttonGraphs)     
                 }
         })
     }
@@ -87,12 +82,10 @@ class Skills{
     toggleActive(item){
         for(let itm of this.data)
             document.getElementById(itm.buttonName).classList.remove('skill-btn-active')
-        document.getElementById(item.buttonName).classList.add('skill-btn-active')
-        
+        document.getElementById(item.buttonName).classList.add('skill-btn-active')        
     }
 
     renderGrahps(item){
-
         this.grahpsContainerDOM = document.getElementById(this.selectorGraphs)
 
         if(!Validator.isValidDOM(this.grahpsContainerDOM))
@@ -105,47 +98,55 @@ class Skills{
         
         for(let itm of item.buttonGraphs)
         {
-          HTML += `<div class="skill-progress-bar">
-          <div class="skill-progress-visibile">${itm.title}
-              <div id="${itm.title}" class="skill-progress-active"></div>
-          </div>
-      </div>`
+            HTML += `<div class="skill-progress-bar">
+            <div class="skill-progress-visibile"><span class="title">${itm.title}</span>
+                <div id="${itm.title}" class="skill-progress-active"><span id="${itm.title}-skill-level" class="skill-level"></span></div>
+            </div>
+            </div>`
         }
-        this.grahpsContainerDOM.innerHTML = HTML
         
+        this.grahpsContainerDOM.innerHTML = HTML
     }
 
-    fireGraphsAnimation(items){
-             
+    fireGraphsAnimation(items){    
         for(let itm of items)
         {
             const graphDOM = document.getElementById(itm.title)
+            const skillLevelDOM = document.getElementById(`${itm.title}-skill-level`)
 
             if(!Validator.isValidDOM(graphDOM))
             {
                 console.error('Wrong selector....')
                 return false;
-            }    
+            }
+            
+            if(!Validator.isValidDOM(skillLevelDOM))
+            {
+                console.error('Wrong selector....')
+                return false;
+            } 
 
-            this.runAnimation(graphDOM,itm)
+            this.runAnimation(graphDOM,itm,skillLevelDOM)
         }
     }
-    runAnimation(el,idx)
+    
+    runAnimation(graphDOM,graph,skillLevelDOM)
     {
         let total = 0;
-        let increment = idx.skillLevel / 80
+        let increment = graph.skillLevel / 70
 
         const timer = setInterval(() =>{ 
-            el.style.width = Math.floor((total += increment)) + '%';
+            graphDOM.style.width = Math.floor((total += increment)) + '%';
 
             if(total < 10)
-                el.innerHTML = '';
+                skillLevelDOM.innerText = '';
             else
-                el.innerText = Math.floor(total) +'%';
+                skillLevelDOM.innerText = Math.floor(total) +'%';
 
-            if(total >= idx.skillLevel)
+            if(Math.floor(total) >= graph.skillLevel)
             {
-                el.innerText = idx.skillLevel + '%'
+                graphDOM.style.width = graph.skillLevel + '%'
+                skillLevelDOM.innerText = graph.skillLevel + '%'
                 clearInterval(timer)
             }              
         }, 1000 / 30 )
