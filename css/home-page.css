@@ -408,11 +408,11 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 .skill-logo{
     background: scroll center no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 1000px;
 }
 .skill-right{
     align-self: center;
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .skill-buttons{
