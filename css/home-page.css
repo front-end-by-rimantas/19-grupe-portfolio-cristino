@@ -618,7 +618,7 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     .section-title.skill {
         margin:0;
     }
-
+}
     @media screen and (max-width: 575px) {
         body > .skill.container-fluid{
             grid-template-columns: 1fr;
@@ -627,6 +627,7 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
             grid-column: 1 / 2;
         }
 }
+
 /* portfolio */
 /* testimonial */
 /* blog */

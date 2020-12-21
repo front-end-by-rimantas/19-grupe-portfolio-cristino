@@ -23,10 +23,7 @@ class Skills{
         }
 
         this.renderButtons()
-        this.fireEventsButtons()
-        
-        this.renderGrahps(this.data[0])
-        this.fireEventsScroll(this.data[0])        
+        this.fireEventsButtons()      
     }
 
     InitializeFirst(){
