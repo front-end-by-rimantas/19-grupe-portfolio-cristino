@@ -18,7 +18,8 @@ const resumeData = [
         title: 'Graphic Designer',
         company: 'Apple - Testor',
         description: 'Therefore always free from repetition, injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.'
-    }
+    },
+
 ];
 
 export {resumeData};

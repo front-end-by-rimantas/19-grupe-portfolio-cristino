@@ -36,7 +36,7 @@ class Resume {
         let HTML = '';
         for(let item in this.data) {
             if(!Validator.isObject(this.data[item])) {
-                console.error('Error');
+                console.error('Error: is not object');
                 continue
             }
 
