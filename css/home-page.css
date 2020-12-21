@@ -499,7 +499,8 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 .skill-logo{
     background: scroll center no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: 90vh;
+    max-height: 700px;
 }
 .skill-right{
     align-self: center;
@@ -570,28 +571,29 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
             font-weight: 400;
             }
 @media screen and (max-width: 1200px) {
-        .skill-btn{
-            width: 100%;
-            margin-left:0;
-        }
         .skill-buttons {
             margin-right: 0px;
-        }
-        .skill-row{
-            padding: 0 100px;
         }
         .skill-right{
             margin-bottom: 0;
         }
     }
 @media screen and (max-width: 992px) {
-    .skill-row{
-        padding: 0 50px;
+    .skill-logo{
+        height: 1200px;
+        max-height: 1200px;
     }
 }
 @media screen and (max-width: 768px) {
-    .skill-row{
-        padding: 0 25px;
+    .skill-btn{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .skill-logo{
+        display:none;
+    }
+    .section-title.skill {
+        margin:0;
     }
 }
 /* portfolio */
