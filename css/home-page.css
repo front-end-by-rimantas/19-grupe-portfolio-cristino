@@ -507,6 +507,11 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     margin-bottom: 200px;
 }
 
+.section-title.skill{
+    width: 90%;
+    justify-self: center;
+}
+
 .skill-buttons{
     margin-right: 50px;   
     display: flex;
@@ -591,15 +596,18 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
         margin-right: 0;     
         place-self: center;
     }
-    /* .skill-btn {
-        width: 90%;
-    } */
 }
 @media screen and (max-width: 768px) {
     .skill-btn{
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
+    }
+    body > .skill.container-fluid{
+        grid-template-columns: 1fr 540px 1fr;
+    }
+    .skill.container-fluid > .row.skill-row{
+        grid-column: 2 / 3;
     }
     .skill-buttons{
         margin-right: 0%;
@@ -610,6 +618,14 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     .section-title.skill {
         margin:0;
     }
+
+    @media screen and (max-width: 575px) {
+        body > .skill.container-fluid{
+            grid-template-columns: 1fr;
+        }
+        .skill.container-fluid > .row.skill-row{
+            grid-column: 1 / 2;
+        }
 }
 /* portfolio */
 /* testimonial */
