@@ -133,7 +133,7 @@ class Skills{
     runAnimation(graphDOM,graph,skillLevelDOM)
     {
         let total = 0;
-        let increment = graph.skillLevel / 70
+        let increment = graph.skillLevel / 50
 
         const timer = setInterval(() =>{ 
             graphDOM.style.width = Math.floor((total += increment)) + '%';
