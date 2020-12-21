@@ -10,6 +10,8 @@ ALL IMPORTS
 import{Projects} from './components/Projects.js';
 import {projectsData} from './data/ProjectsData.js';
 /* services */
+import {servicesData} from './data/ServicesData.js';
+import{Services} from './components/Services.js';
 /* resume */
 /* skill */
 import { Skills } from './components/Skills.js';
@@ -38,6 +40,10 @@ new Projects({
     data: projectsData
 });
 /* services */
+new Services({
+    selector: '.container.services > .row',
+    data: servicesData
+})
 /* resume */
 /* skill */
 new Skills({
