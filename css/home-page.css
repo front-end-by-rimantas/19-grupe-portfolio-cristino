@@ -504,15 +504,17 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 }
 .skill-right{
     align-self: center;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 }
 
 .skill-buttons{
-    margin-right: 50px;    
+    margin-right: 50px;   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
 }
     .skill-btn{
-        width: 70%;
-        margin-left: 30%;
+        width: 50%;
         margin-top: 30px;
         text-align: center;
         border: 1px solid #e9ecef;
@@ -569,34 +571,37 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
             font-family: "Montserrat", sans-serif;
             line-height: 1.5;
             font-weight: 400;
-            }
+            }    
 @media screen and (max-width: 1200px) {
-        .skill-buttons {
-            margin-right: 0px;
-        }
-        .skill-right{
-            margin-bottom: 0;
-        }
+    .skill-btn{
+        width: 90%;
     }
+}
 @media screen and (max-width: 992px) {
     .skill-logo{
         height: 1200px;
         max-height: 1200px;
+        width: 70%;
+        margin-right: 0;
     }
+    /* .skill-btn {
+        width: 90%;
+    } */
 }
 @media screen and (max-width: 768px) {
     .skill-btn{
         width: 100%;
         margin-left: 0%;
+        margin-right: 0%;
+    }
+    .skill-buttons{
+        margin-right: 0%;
     }
     .skill-logo{
         display:none;
     }
     .section-title.skill {
         margin:0;
-    }
-    .skill.container-fuild{
-        display:grid;
     }
 }
 /* portfolio */
