@@ -10,10 +10,28 @@ class Resume {
     }
 
     init() {
-        this.render();
+        if(this.isValid()) {
+            this.render();
+        }
+        return false;
     }
 
-    
+    isValid() {
+        const selector = document.querySelector(this.selector);
+        if(!Validator.isValidDOM(selector)) {
+            console.error('Error: selector not exist');
+            return false;
+        }
+
+        if(!Validator.isArray(this.data)) {
+            console.error('Error: type date not array or empty');
+            return false;
+        }
+
+        return true;
+    }
+
+
     render() {
         let HTML = '';
         for(let item in this.data) {
