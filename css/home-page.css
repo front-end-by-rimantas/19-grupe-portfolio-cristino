@@ -500,7 +500,7 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     background: scroll center no-repeat;
     background-size: cover;
     height: 90vh;
-    max-height: 700px;
+    max-height: 900px;
 }
 .skill-right{
     align-self: center;
@@ -594,6 +594,9 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     }
     .section-title.skill {
         margin:0;
+    }
+    .skill.container-fuild{
+        display:grid;
     }
 }
 /* portfolio */
