@@ -1,0 +1,31 @@
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+    line-height: 22.4px;
+    border:  1px solid #e54b4b;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 3px 5px 0 rgba(229, 75, 75, 0.3);
+}
+
+.btn-primary {
+    background-color: #e54b4b;
+}
+
+.btn-primary:hover {
+    background-color: #F50000;
+}
+
+.btn-second {
+    color: #e54b4b;
+    margin-left: 10px;
+}
+
+.btn-second:hover {
+    background-color: #e54b4b;
+    color: #ffffff;
+}

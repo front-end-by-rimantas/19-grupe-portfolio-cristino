@@ -1,37 +1,48 @@
 /***************
 ALL IMPORTS
 ****************/
+/* loader */
 /* header */
 /* hero */
-/* features */
-/* app promo */
-/* app promo 2 */
-/* how works */
-/* gallery */
-/* testimonials */
-/* pricing */
-/* faq */
-/* team */
-/* app store */
-/* subscribe */
+/* about */
+/* hobbies */
+/* project done */
+import{Projects} from './components/Projects.js';
+import {projectsData} from './data/ProjectsData.js';
+/* services */
+/* resume */
+/* skill */
+/* portfolio */
+/* testimonial */
+/* blog */
+/* freelancer */
 /* contact */
 /* footer */
+/* back top */
+/* style swicher */
 
 /***************
 EXECUTION
 ****************/
+
+/* loader */
 /* header */
 /* hero */
-/* features */
-/* app promo */
-/* app promo 2 */
-/* how works */
-/* gallery */
-/* testimonials */
-/* pricing */
-/* faq */
-/* team */
-/* app store */
-/* subscribe */
+/* about */
+/* hobbies */
+/* project done */
+new Projects({
+    selector: '.container.projects > .row',
+    data: projectsData
+});
+/* services */
+/* resume */
+/* skill */
+/* portfolio */
+/* testimonial */
+/* blog */
+/* freelancer */
 /* contact */
 /* footer */
+/* back top */
+/* style swicher */

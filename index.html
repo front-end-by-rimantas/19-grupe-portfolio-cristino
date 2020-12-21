@@ -9,109 +9,267 @@
 </head>
 
 <body>
+    <!-- loader begin -->
+
+    <!-- loader end -->
+
     <!-- header begin -->
-    <header class="container">
-        <div class="row">
-            HEADER: logo + nav
+    <header class="container-fluid header">
+        <div class="container">
+            <div class="row">
+                <img class="logo" src="./Images/logo.png" alt="LOGO">
+                <nav class = "nav"> <!-- su JS -->  
+                    <a class="link" href="#">Home</a>
+                    <a class="link" href="#">Services</a>
+                    <a class="link" href="#">Resume</a>
+                    <a class="link" href="#">Projects</a>
+                    <a class="link" href="#">Blog</a>
+                    <a class="link" href="#">Contact</a>
+                    <a class="link" href="#">Pages</a>
+                </nav>
+                <div class = "socials">
+                    <a href="#" class="fab fa-facebook-f social"></a>
+                    <a href="#" class="fab fa-twitter social"></a>
+                    <a href="#" class="fab fa-instagram social"></a>
+                </div> <!-- su JS --> 
+            </div>      
         </div>
     </header>
     <!-- header end -->
 
     <!-- section HERO begin -->
-    <section class="container">
-        <div class="row">
-            HERO
+    <section class="container hero">
+        <div class="row hero">
+            <div class="col-6 col-sm-8 col-xs-12 hero-text ">
+                <h5 class="hero">Looking for a Designer !</h5>
+                <h1 class="hero">I'm Cristino Murphy</h1>
+                <p class="hero">Obviously I'm a Web Designer. Web Developer with over 3 years of experience. Experienced with all stages of the development cycle for dynamic web projects.</p>         
+                <div class="hero btns">
+                    <a href="#" class="btn btn-primary">Hire me</a>
+                    <a href="#" class="btn btn-second">Download CV</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-mouse">
+            <div class="hero-mouse-wheel"></div>
         </div>
     </section>
     <!-- section HERO end -->
 
-    <!-- section FEATURES begin -->
-    <section class="container">
-        <div class="row">
-            FEATURES
+    <!-- section ABOUT begin -->
+    <section class="container about">
+        <div class="row align-items-center">
+            <div class="col-md-5 col-lg-5">
+                <div class="about__hero">
+                    <img src="./images/hero.png" alt="about hero" class="about__hero-image">
+                </div>
+            </div>
+            <div class="col-md-7 col-lg-7">
+                <div class="about__content">
+                    <h3 class="about__title">Cristino Murphy</h3>
+                    <h5 class="about__subtitle">I'm a Passionate <span>Web Designer</span></h5>
+                    <p class="about__text">Obviously I'm a Web Designer. Web Developer with over 3 years of experience. Experienced with all stages of the development cycle for dynamic web projects. The as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <p class="about__text">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <div class="about__signature">
+                        <img src="./images/sign.png" alt="signature" class="about__signature-image">
+                    </div>
+                    <a href="#" class="btn btn-primary">View Portfolio</a>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- section FEATURES end -->
+    <!-- section ABOUT end -->
 
-    <!-- section APP PROMO begin -->
+    <!-- section HOBBIES begin -->
     <section class="container">
         <div class="row">
-            APP PROMO
+            HOBBIES
         </div>
     </section>
-    <!-- section APP PROMO end -->
+    <!-- section HOBBIES end -->
 
-    <!-- section APP PROMO 2 begin -->
-    <section class="container">
-        <div class="row">
-            APP PROMO 2
-        </div>
+    <!-- section PROJECT DONE begin -->
+    <section class="container-fluid projects" ;>
+        <div class="container projects" style="background-image: url('./Images/bg-counter.png')">
+            <div class="row"></div>
+        </div> 
+        
     </section>
-    <!-- section APP PROMO 2 end -->
+    <!-- section PROJECT end -->
 
-    <!-- section HOW WORKS? begin -->
-    <section class="container">
-        <div class="row">
-            HOW WORKS?
-        </div>
-    </section>
-    <!-- section HOW WORKS? end -->
+    <div class="section-title">
+        <h2 class="header-section-title">What do I offer ?</h2>
+        <img class="section-title-decoration" src="./img/section-title-decoration.png" alt="section-title-decoration">
+        <p class="paragraph-section-title">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+    </div>
 
-    <!-- section GALLERY begin -->
-    <section class="container">
+    <!-- section SERVICES begin -->
+    <section class="container services">
         <div class="row">
-            GALLERY
-        </div>
-    </section>
-    <!-- section GALLERY end -->
 
-    <!-- section TESTIMONIALS begin -->
-    <section class="container">
-        <div class="row">
-            TESTIMONIALS
+            <div class="services-cube col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="cube-container">
+                    <svg class="cube-icon"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay fea icon-md"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon>
+                    </svg>
+                    <h5 class="cube-h5">UX / UI Design</h5>
+                    <p class="cube-text">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
+                    <svg class="cube-icon-grow"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay fea icon-md"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon>
+                    </svg>
+                </div>          
+            </div>
+            <div class="services-cube  col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="cube-container">
+                    <svg  class="cube-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-aperture fea icon-md"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                    </svg>
+                    <h5 class="cube-h5">Ios App Designer</h5>
+                    <p class="cube-text">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
+                    <svg class="cube-icon-grow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-aperture fea icon-md"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+                </div>
+            </div>
+                <div class="services-cube  col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="cube-container">
+                    <svg  class="cube-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera fea icon-md"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                    <h5 class="cube-h5">Photography</h5>
+                    <p class="cube-text">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
+                    <svg  class="cube-icon-grow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera fea icon-md"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                </div>
+            </div>
+                <div class="services-cube   col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="cube-container">
+                    <svg class= "cube-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass fea icon-md"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
+                    <h5 class="cube-h5">Graphic Designer</h5>
+                    <p class="cube-text">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
+                    <svg class="cube-icon-grow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass fea icon-md"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                </div>
+            </div>
+                <div class="services-cube  col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="cube-container">
+                    <svg class="cube-icon"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings fea icon-md"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    <h5 class="cube-h5">Web Security</h5>
+                    <p class="cube-text">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
+                    <svg class="cube-icon-grow"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings fea icon-md"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                </div>
+            </div>
+                <div class="services-cube  col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 ">
+                    <div class="cube-container">
+                    <svg class="cube-icon"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-watch fea icon-md"><circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path></svg>
+                    <h5 class="cube-h5">Graphic Designer</h5>
+                    <p class="cube-text">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
+                    <svg class="cube-icon-grow"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-watch fea icon-md"><circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path></svg>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- section TESTIMONIALS end -->
+    <!-- section SERVICES end -->
 
-    <!-- section PRICING begin -->
-    <section class="container">
-        <div class="row">
-            PRICING
-        </div>
-    </section>
-    <!-- section PRICING end -->
+    <!-- section RESUME begin -->
+    <section class="resume" id="resume">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="section-title">
+                    <h2 class="header-section-title">Work Participation</h2>
+                    <img class="section-title-decoration" src="./img/section-title-decoration.png" alt="section-title-decoration">
+                    <p class="paragraph-section-title">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="resume__icon">
+                            <i class="far fa-star"></i>
+                    </div>
+                    <div class="resume__timeline">
+                        <div class="resume__timeline-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                        <div class="date-label">2015 - 2018</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="description-block">
+                                        <h3 class="description-block__title">UX Designer</h3>
+                                        <div class="description-block__subtitle">Vivo - Senior Designer</div>
+                                        <p class="description-block__text">The generated injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    <!-- section FAQ begin -->
-    <section class="container">
-        <div class="row">
-            FAQ
-        </div>
-    </section>
-    <!-- section FAQ end -->
+                        <div class="resume__timeline-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="date-label">2012 - 2015</div>
+                                </div>
 
-    <!-- section TEAM begin -->
-    <section class="container">
-        <div class="row">
-            TEAM
-        </div>
-    </section>
-    <!-- section TEAM end -->
+                                <div class="col-md-6">
+                                    <div class="description-block">
+                                        <h3 class="description-block__title">Web Developer</h3>
+                                        <div class="description-block__subtitle">Oppo - HR Manager</div>
+                                        <p class="description-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus. Donec auctor et urnaLorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    <!-- section APP STORE begin -->
-    <section class="container">
-        <div class="row">
-            APP STORE
+                        <div class="resume__timeline-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="date-label">2012 - 2010</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="description-block">
+                                        <h3 class="description-block__title">Graphic Designer</h3>
+                                        <div class="description-block__subtitle">Apple - Testor</div>
+                                        <p class="description-block__text">Therefore always free from repetition, injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- section APP STORE end -->
+    <!-- section RESUME end -->
 
-    <!-- section SUBSCRIBE begin -->
+    <!-- section SKILL begin -->
     <section class="container">
         <div class="row">
-            SUBSCRIBE
+            SKILL
         </div>
     </section>
-    <!-- section SUBSCRIBE end -->
+    <!-- section SKILL end -->
+
+    <!-- section PORTFOLIO begin -->
+    <section class="container">
+        <div class="row">
+            PORTFOLIO
+        </div>
+    </section>
+    <!-- section PORTFOLIO end -->
+
+    <!-- section TESTIMONIAL begin -->
+    <section class="container">
+        <div class="row">
+            TESTIMONIAL
+        </div>
+    </section>
+    <!-- section TESTIMONIAL end -->
+
+    <!-- section BLOG begin -->
+    <section class="container">
+        <div class="row">
+            BLOG
+        </div>
+    </section>
+    <!-- section BLOG end -->
+
+    <!-- section FREELANCE begin -->
+    <section class="container-fluid">
+        <div class="row">
+            FREELANCE
+        </div>
+    </section>
+    <!-- section FREELANCE end -->
 
     <!-- section CONTACT begin -->
     <section class="container">
@@ -128,6 +286,10 @@
         </div>
     </footer>
     <!-- footer end -->
+
+    <!-- Back top -->
+    
+    <!-- Back top  -->
 
     <script src="./js/main-home.js" type="module"></script>
 </body>
