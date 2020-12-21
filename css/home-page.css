@@ -571,7 +571,13 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
             font-family: "Montserrat", sans-serif;
             line-height: 1.5;
             font-weight: 400;
-            }    
+            } 
+
+@media screen and (max-width: 1500px) {
+    .skill-btn{
+        width: 70%;
+    }   
+}
 @media screen and (max-width: 1200px) {
     .skill-btn{
         width: 90%;
@@ -582,7 +588,8 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
         height: 1200px;
         max-height: 1200px;
         width: 70%;
-        margin-right: 0;
+        margin-right: 0;     
+        place-self: center;
     }
     /* .skill-btn {
         width: 90%;
