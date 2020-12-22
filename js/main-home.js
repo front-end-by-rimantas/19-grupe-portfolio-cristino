@@ -13,6 +13,8 @@ import {projectsData} from './data/ProjectsData.js';
 import {servicesData} from './data/ServicesData.js';
 import{Services} from './components/Services.js';
 /* resume */
+import {Resume} from './components/Resume.js';
+import {resumeData} from './data/resumeData.js';
 /* skill */
 import { Skills } from './components/Skills.js';
 import {skillsData} from './data/SkillsData.js';
@@ -45,6 +47,10 @@ new Services({
     data: servicesData
 })
 /* resume */
+new Resume({
+    selector: '.resume .resume__timeline',
+    data: resumeData
+});
 /* skill */
 new Skills({
     selectorButtons:'skill-buttons',
