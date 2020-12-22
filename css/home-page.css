@@ -496,6 +496,138 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 
 /* skill */
+.skill-logo{
+    background: scroll center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    max-height: 900px;
+}
+.skill-right{
+    align-self: center;
+    margin-bottom: 200px;
+}
+
+.section-title.skill{
+    width: 90%;
+    justify-self: center;
+}
+
+.skill-buttons{
+    margin-right: 50px;   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+    .skill-btn{
+        width: 50%;
+        margin-top: 30px;
+        text-align: center;
+        border: 1px solid #e9ecef;
+        background-color: #ffffff;
+        color: #161c2d;
+        box-shadow: none; 
+        outline:none;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    .skill-btn-active{
+        background-color: #e54b4b;
+        color:  #e9ecef;
+    }
+    .skill-buttons .skill-btn:hover{
+        background-color:#e54b4b;
+    }
+.skill-graphs{
+    align-self: center;
+}
+
+    .skill-progress-bar{
+        margin-top: 60px;
+    }
+        .skill-progress-visibile{
+            position: relative;
+            border-bottom: #e9ecef solid 10px;
+            width: 100%;
+            text-align: start;
+        }
+        .skill-progress-active{
+            position: absolute;
+            bottom: -10px;
+            left:0;
+            border-bottom: #e54b4b solid 10px;
+            width: 0;
+            text-align: end;
+        }
+            .skill-progress-active > .skill-level{
+                position: absolute;
+                left: 97%;
+                bottom: 0%;
+                margin-bottom: 10px;
+                font-family: "Montserrat", sans-serif;
+                line-height: 1.5;
+                font-weight: 600;
+            }
+           .skill-progress-visibile .title{
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            margin-bottom: 10px;
+            font-family: "Montserrat", sans-serif;
+            line-height: 1.5;
+            font-weight: 400;
+            } 
+
+@media screen and (max-width: 1500px) {
+    .skill-btn{
+        width: 70%;
+    }   
+}
+@media screen and (max-width: 1200px) {
+    .skill-btn{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .skill-logo{
+        height: 1200px;
+        max-height: 1200px;
+        width: 70%;
+        margin-right: 0;     
+        place-self: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .skill-btn{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    body > .skill.container-fluid{
+        grid-template-columns: 1fr 540px 1fr;
+    }
+    .skill.container-fluid > .row.skill-row{
+        grid-column: 2 / 3;
+    }
+    .skill-buttons{
+        margin-right: 0%;
+    }
+    .skill-logo{
+        display:none;
+    }
+    .section-title.skill {
+        margin:0;
+    }
+}
+    @media screen and (max-width: 575px) {
+        body > .skill.container-fluid{
+            grid-template-columns: 1fr;
+        }
+        .skill.container-fluid > .row.skill-row{
+            grid-column: 1 / 2;
+        }
+}
+
 /* portfolio */
 /* testimonial */
 /* blog */
