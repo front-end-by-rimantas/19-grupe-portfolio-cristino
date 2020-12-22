@@ -2,6 +2,7 @@ const skillsData = [
     {
         
         buttonName:"UX Design",
+        active:true,
         buttonGraphs: [
             {
                title:"HTML",
@@ -19,6 +20,7 @@ const skillsData = [
     },
     {
         buttonName:"Language Skill",
+        active:false,
         buttonGraphs: [
             {
                title:"English",
@@ -36,6 +38,7 @@ const skillsData = [
     },
     {
         buttonName:"Web Development",
+        active:false,
         buttonGraphs: [
             {
                title:"Photoshop",
