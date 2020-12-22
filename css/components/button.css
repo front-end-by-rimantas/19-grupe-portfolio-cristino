@@ -24,6 +24,11 @@
     color: #e54b4b;
 }
 
+.btn-second:hover {
+    background-color: #e54b4b;
+    color: #ffffff;
+}
+
 .btn-submit {
     display: inline-block;
     width: 146px;
@@ -52,8 +57,8 @@
         background-color: #F50000;
     }
 
-
 .btn-second:hover {
     background-color: #e54b4b;
     color: #ffffff;
 }
+
