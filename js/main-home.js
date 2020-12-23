@@ -19,6 +19,7 @@ import {resumeData} from './data/resumeData.js';
 import { Skills } from './components/Skills.js';
 import {skillsData} from './data/SkillsData.js';
 /* portfolio */
+import {Portfolio} from './components/portfolio.js'
 /* testimonial */
 /* blog */
 /* freelancer */
