@@ -629,6 +629,39 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 }
 
 /* portfolio */
+.container.portfolio{
+    background-color: #f9fafd;
+}
+
+.portfolio > .row > .portfolio-title{
+    margin-top: 150px
+}
+
+.portfolio-buttons{
+    justify-self: center;
+}
+.portfolio-photo{
+    
+}
+    .portfolio-img-cont{
+        background-color: rgba(60, 72, 88, 0.65);
+        overflow: hidden;
+    }
+        .portfolio-img{
+            max-width: 100%;
+            
+        }
+.portfolio-photo:hover{
+    box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+    transform: translateY(-5px);
+    transition: all 0.5s ease;
+}
+.portfolio-photo:hover .portfolio-img{
+    transition: all 0.5s ease;  
+    opacity: 0.2;
+    transform: rotate(2deg) scale(1.15);
+    
+}
 /* testimonial */
 /* blog */
 /* freelancer */
