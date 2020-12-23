@@ -639,12 +639,30 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 .portfolio-buttons{
     text-align: center;
-    margin: 50px 0;
+    margin: 25px 0 50px 0;
 }
     .portfolio-btn{
-       color:#161c2d;
-       margin-left: 100px;
+       color: #3c4858;
+       background-color:#f9fafd;
+       font-size: 15px;
+       font-family: "Roboto", sans-serif;
+       font-weight: 400;
+       padding: 5px 10px;
+       line-height: 30px;
+       border: 1px #f9fafd;
+       border-radius: 7px;
+       background-color: #f9fafd;
     }
+    .portfolio-btn:not(:first-of-type){
+        margin-left: 8px
+    }
+    .portfolio-btn:hover{
+
+        color:#f9fafd;
+        background-color: #e54b4b;
+        transition: all 0.4s ease-in-out;
+    }
+
 .portfolio-photo{
     box-shadow: 0 0 8px rgba(60, 72, 88, 0.15);
 }
