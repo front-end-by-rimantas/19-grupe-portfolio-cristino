@@ -15,7 +15,19 @@ function burgerToggle(selector) {
     DOM.addEventListener('click', (e) => {
         e.preventDefault();
         DOM.classList.toggle('active');
-        document.querySelector('.header .navbar').classList.toggle('open');
+        const headerNavbarSelector = document.querySelector('.header .navbar');
+
+        if(!Validator.isValidDOM(headerNavbarSelector)) {
+            console.error('ERROR: selector not exists');
+        }
+
+        headerNavbarSelector.classList.toggle('open');
+        window.addEventListener('click', (event) => {
+            if(event.target.tagName.toLowerCase() === 'a') {
+                DOM.classList.remove('active');
+                headerNavbarSelector.classList.remove('open');
+            }
+        });
     });
 }
 
