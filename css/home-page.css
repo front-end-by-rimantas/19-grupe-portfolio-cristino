@@ -239,6 +239,7 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 /* services */
 .container.services{
+    padding-top: 100px;
     padding-bottom: 100px;
     background-color: #f9fafd
 }

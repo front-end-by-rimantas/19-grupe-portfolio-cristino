@@ -45,7 +45,7 @@ new Projects({
 });
 /* services */
 new Services({
-    selector: '.container.services > .row',
+    selector: '.services > .row',
     data: servicesData
 })
 /* resume */
