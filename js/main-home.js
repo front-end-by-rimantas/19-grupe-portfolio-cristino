@@ -59,6 +59,9 @@ new Skills({
     data: skillsData,
 })
 /* portfolio */
+new Portfolio({
+    
+})
 /* testimonial */
 /* blog */
 /* freelancer */
