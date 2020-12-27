@@ -29,11 +29,11 @@
                 <div class="navbar navbar--collapse">
                     <nav class = "nav"> <!-- su JS -->  
                         <a class="link" href="#">Home</a>
-                        <a class="link" href="#">Services</a>
-                        <a class="link" href="#">Resume</a>
-                        <a class="link" href="#">Projects</a>
-                        <a class="link" href="#">Blog</a>
-                        <a class="link" href="#">Contact</a>
+                        <a class="link" href="#services">Services</a>
+                        <a class="link" href="#resume">Resume</a>
+                        <a class="link" href="#projects">Projects</a>
+                        <a class="link" href="#blog">Blog</a>
+                        <a class="link" href="#contact">Contact</a>
                         <a class="link" href="#">Pages</a>
                     </nav>
                     <div class = "socials">
@@ -324,7 +324,7 @@
     </div>
 
     <!-- section SERVICES begin -->
-    <section class="container services">
+    <section id="services" class="container services">
         <div class="row">
         </div>
     </section>
@@ -411,13 +411,14 @@
     <!-- section FREELANCE end -->
 
     <!-- section CONTACT begin -->
-    <div class="section-title">
-        <h2 class="header-section-title">Contact me</h2>
-        <img class="section-title-decoration" src="./img/section-title-decoration.png" alt="section-title-decoration">
-        <p class="paragraph-section-title">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
-    </div>
-
-    <section class="container contact-me">
+    <section id="contact" class="container contact-me">
+        <div class="row d-flex justify-content-center">
+            <div class="section-title">
+                <h2 class="header-section-title">Contact me</h2>
+                <img class="section-title-decoration" src="./img/section-title-decoration.png" alt="section-title-decoration">
+                <p class="paragraph-section-title">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            </div>
+        </div>
         <div class="row">
             <div class="col-4 col-xs-12">
                 <img src="./img/phone.png" alt="phone" class="contact-me-decoration">
@@ -460,16 +461,6 @@
             <div class="col-12 contact-form-submit">
                 <input type="Submit" value="Send Message" class="btn-submit">
             </div>
-        </div>
-    </section>
-
-
-
-
-
-    <section class="container">
-        <div class="row">
-            CONTACT
         </div>
     </section>
     <!-- section CONTACT end -->
