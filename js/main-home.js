@@ -3,6 +3,7 @@ ALL IMPORTS
 ****************/
 /* loader */
 /* header */
+import {burgerToggle} from './components/burger.js';
 /* hero */
 /* about */
 /* hobbies */
@@ -33,6 +34,7 @@ EXECUTION
 
 /* loader */
 /* header */
+burgerToggle('.header .burger');
 /* hero */
 /* about */
 /* hobbies */
