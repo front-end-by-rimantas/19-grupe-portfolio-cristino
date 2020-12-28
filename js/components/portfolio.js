@@ -44,4 +44,40 @@ class Portfolio{
     }
 }
 
-export {Portfolio}
+class PortfolioBtn{
+    constructor(params){
+        this.selectorBtn = params.selectorBtn;
+
+        this.data = params.data;
+        this.containerDOM = null;
+        this.isBtnActive = false;
+        this.initialize();
+        
+    }
+
+    initialize(){
+        this.containerDOM = document.querySelector(this.selectorBtn)
+
+        if(!Validator.isValidDOM(this.containerDOM))
+        {
+            console.error('Wrong selector....')
+            return false;
+        }       
+        this.render()
+    }
+
+    render(){
+        let HTML = "";
+        for(let item of this.data)
+        {
+            if(item.btn === 'All')
+            HTML += `<button class="portfolio-btn portfolio-btn-active">${item.btn}</button>`
+            else
+            HTML += `<button class="portfolio-btn">${item.btn}</button>`
+        }
+        
+        this.containerDOM.insertAdjacentHTML('beforeend',HTML)
+    }
+}
+
+export {Portfolio, PortfolioBtn}
