@@ -670,6 +670,9 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 .portfolio-photo{
     box-shadow: 0 0 8px rgba(60, 72, 88, 0.15);
+    opacity : 100%;
+    width : 100%;
+    height : 100%;
 }
     .portfolio-img-cont{
         background-color: rgba(60, 72, 88, 0.65);
@@ -742,6 +745,15 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
     }
     .portfolio-h5:hover{
         color: red;
+    }
+    .portfolio-photo-hide{
+        opacity : 0;
+        width : 0;
+        height : 0;
+        transition : all 2s ease-in-out;
+    }
+    .portfolio-photo-hide1{
+        display: none;
     }
 /* testimonial */
 /* blog */

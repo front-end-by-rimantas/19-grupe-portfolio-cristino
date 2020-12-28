@@ -86,7 +86,7 @@ class PortfolioBtn{
         btnDOMs.forEach(btn => {
             btn.addEventListener('click', () => {
                 this.toggleActive(btn,btnDOMs)
-                this.filterPhotos()
+                this.filterPhotos(btn)
             })
         });
     }
@@ -94,6 +94,15 @@ class PortfolioBtn{
     toggleActive(btn,btnDOMs){
         btnDOMs.forEach(btn => { btn.classList.remove('portfolio-btn-active')})
         btn.classList.add('portfolio-btn-active')
+    }
+    filterPhotos(btn){
+         const photosDOMs = document.querySelectorAll('.portfolio-photo')
+         
+         photosDOMs[0].classList.add('portfolio-photo-hide')
+         
+         photosDOMs[0].addEventListener('transitionend', () =>{
+            photosDOMs[0].classList.add('portfolio-photo-hide1')
+         })
     }
 }
 
