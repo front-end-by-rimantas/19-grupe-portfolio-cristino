@@ -52,6 +52,7 @@ class PortfolioBtn{
         this.containerDOM = null;
         this.isBtnActive = false;
         this.initialize();
+
         
     }
 
@@ -64,6 +65,7 @@ class PortfolioBtn{
             return false;
         }       
         this.render()
+        this.addEvents()
     }
 
     render(){
@@ -71,12 +73,27 @@ class PortfolioBtn{
         for(let item of this.data)
         {
             if(item.btn === 'All')
-            HTML += `<button class="portfolio-btn portfolio-btn-active">${item.btn}</button>`
+                HTML += `<button class="portfolio-btn portfolio-btn-active">${item.btn}</button>`
             else
-            HTML += `<button class="portfolio-btn">${item.btn}</button>`
+                HTML += `<button class="portfolio-btn">${item.btn}</button>`
         }
         
         this.containerDOM.insertAdjacentHTML('beforeend',HTML)
+    }
+
+    addEvents(){
+        const btnDOMs = document.querySelectorAll(this.selectorBtn  + '> .portfolio-btn')
+        btnDOMs.forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.toggleActive(btn,btnDOMs)
+                this.filterPhotos()
+            })
+        });
+    }
+
+    toggleActive(btn,btnDOMs){
+        btnDOMs.forEach(btn => { btn.classList.remove('portfolio-btn-active')})
+        btn.classList.add('portfolio-btn-active')
     }
 }
 
