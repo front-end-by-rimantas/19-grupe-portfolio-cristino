@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 /* your components */
 @import './components/button.css';
-@import './components/section-title.css';
 @import './components/faq.css';
 @import './components/footer.css';
 @import './components/form.css';
@@ -18,7 +17,8 @@
 @import './components/mouse.css';
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 @import './components/contact-me.css';
-
+@import './components/freelance.css';
+@import './components/section-title.css';
 /*
 ***********************************************
 CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
