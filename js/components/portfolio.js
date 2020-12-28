@@ -2,7 +2,7 @@ import {Validator} from '../misc/Validator.js'
 
 class Portfolio{
     constructor(params){
-        this.selector = params.selector;
+        this.selectorPhotos = params.selectorPhotos;
 
         this.data = params.data;
         this.containerDOM = null;
@@ -12,7 +12,7 @@ class Portfolio{
     }
 
     initialize(){
-        this.containerDOM = document.querySelector(this.selector)
+        this.containerDOM = document.querySelector(this.selectorPhotos)
 
         if(!Validator.isValidDOM(this.containerDOM))
         {
@@ -26,15 +26,17 @@ class Portfolio{
         let HTML = "";
         for(let item of this.data)
         {
-            HTML += ` <div class="services-cube col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="cube-container">
-                <svg class="cube-icon"${item.icon}
-                </svg>
-                <h5 class="cube-h5">${item.h5}</h5>
-                <p class="cube-text">${item.p}</p>
-                <svg class="cube-icon-grow"${item.iconBig}
-                </svg>
-            </div>          
+            HTML += `<div class="portfolio-photo col-xs-12 col-sm-12 col-md-6  col-lg-4 col-xl-4">
+            <div class="portfolio-img-cont">
+                <img class="portfolio-img" src="${item.img}" alt="#">
+                <div class="svg-cont">
+                    <svg class="portfolio-hover-img" ${item.svg}</svg>
+                </div>
+            </div>
+            <div class="portfolio-text">
+                <h5 class="portfolio-h5">${item.h5}</h5>
+                <p class="portfolio-p">${item.p}</p>
+            </div>
         </div>`
         }
         

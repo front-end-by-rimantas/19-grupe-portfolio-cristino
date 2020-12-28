@@ -20,6 +20,7 @@ import { Skills } from './components/Skills.js';
 import {skillsData} from './data/SkillsData.js';
 /* portfolio */
 import {Portfolio} from './components/portfolio.js'
+import { portfolioData } from './data/portfolioData.js';
 /* testimonial */
 /* blog */
 /* freelancer */
@@ -60,7 +61,8 @@ new Skills({
 })
 /* portfolio */
 new Portfolio({
-    
+    selectorPhotos:'.row.photo-container',
+    data:portfolioData
 })
 /* testimonial */
 /* blog */
