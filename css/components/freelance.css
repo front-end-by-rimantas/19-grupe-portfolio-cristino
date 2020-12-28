@@ -1,0 +1,28 @@
+.freelance-section {
+    display: inline-block;
+    width: 100%;
+    background-image: url(../../Images/hireme.png);
+    background-attachment: inherit;
+    background-position: center; 
+    text-align: center;
+    border-radius: 30px;
+    padding: 48px 0;
+}
+
+h3.freelance {
+    color: #f9fafd;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    font-size: 24px;
+    margin: 0 0 8px;
+}
+
+p.freelance {
+    max-width: 700px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: rgb( 255, 255, 255, 0.5);
+    line-height: 1.8;
+    margin: 24px auto;
+}
+
