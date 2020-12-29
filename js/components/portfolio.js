@@ -95,11 +95,11 @@ class PortfolioBtn{
         btnDOMs.forEach(btn => { btn.classList.remove('portfolio-btn-active')})
         btn.classList.add('portfolio-btn-active')
     }
-    filterPhotos(btn){
-         const photosDOMs = document.querySelectorAll('.portfolio-photo')
+    // filterPhotos(btn){
+    //      const photosDOMs = document.querySelectorAll('.portfolio-photo')
          
-         photosDOMs[0].classList.add('portfolio-photo-hide')
-    }
+    //      photosDOMs[0].classList.add('portfolio-photo-hide')
+    // }
 }
 
 export {Portfolio, PortfolioBtn}
