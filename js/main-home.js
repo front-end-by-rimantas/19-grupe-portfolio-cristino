@@ -22,6 +22,8 @@ import {resumeData} from './data/resumeData.js';
 import { Skills } from './components/Skills.js';
 import {skillsData} from './data/SkillsData.js';
 /* portfolio */
+import {Portfolio, PortfolioBtn} from './components/portfolio.js'
+import { portfolioData,portfolioBtnData } from './data/portfolioData.js';
 /* testimonial */
 /* blog */
 /* freelancer */
@@ -64,6 +66,14 @@ new Skills({
     data: skillsData,
 })
 /* portfolio */
+new Portfolio({
+    selectorPhotos:'.row.photo-container',
+    data:portfolioData
+})
+new PortfolioBtn({
+    selectorBtn: '.row.button-container > .portfolio-buttons.col-12',
+    data:portfolioBtnData
+})
 /* testimonial */
 /* blog */
 /* freelancer */
