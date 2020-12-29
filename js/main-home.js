@@ -3,6 +3,9 @@ ALL IMPORTS
 ****************/
 /* loader */
 /* header */
+import {burgerToggle} from './components/burger.js';
+import {headerScroll} from './components/headerScroll.js';
+import {headerNavActions} from './components/headerNavActions.js';
 /* hero */
 /* about */
 /* hobbies */
@@ -35,6 +38,9 @@ EXECUTION
 
 /* loader */
 /* header */
+burgerToggle('.header .burger');
+headerScroll('.header');
+headerNavActions('.header .nav .link');
 /* hero */
 /* about */
 /* hobbies */
@@ -45,7 +51,7 @@ new Projects({
 });
 /* services */
 new Services({
-    selector: '.container.services > .row',
+    selector: '.services > .row',
     data: servicesData
 })
 /* resume */

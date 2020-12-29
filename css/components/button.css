@@ -56,3 +56,9 @@
     .btn-submit:hover {
         background-color: #F50000;
     }
+
+.btn-second:hover {
+    background-color: #e54b4b;
+    color: #ffffff;
+}
+

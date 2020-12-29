@@ -9,6 +9,7 @@
 @import './components/footer.css';
 @import './components/form.css';
 @import './components/gallery.css';
+@import './components/burger-menu.css';
 @import './components/header.css';
 @import './components/hero-home.css';
 @import './components/pricing.css';
@@ -16,7 +17,7 @@
 @import './components/mouse.css';
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 @import './components/contact-me.css';
-=======
+@import './components/freelance.css';
 @import './components/section-title.css';
 /*
 ***********************************************
@@ -238,6 +239,7 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 /* services */
 .container.services{
+    padding-top: 100px;
     padding-bottom: 100px;
     background-color: #f9fafd
 }

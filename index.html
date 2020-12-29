@@ -16,24 +16,33 @@
     <!-- loader end -->
 
     <!-- header begin -->
-    <header class="container-fluid header">
+    <header class="header">
         <div class="container">
             <div class="row">
                 <img class="logo" src="./Images/logo.png" alt="LOGO">
-                <nav class = "nav"> <!-- su JS -->  
-                    <a class="link" href="#">Home</a>
-                    <a class="link" href="#">Services</a>
-                    <a class="link" href="#">Resume</a>
-                    <a class="link" href="#">Projects</a>
-                    <a class="link" href="#">Blog</a>
-                    <a class="link" href="#">Contact</a>
-                    <a class="link" href="#">Pages</a>
-                </nav>
-                <div class = "socials">
-                    <a href="#" class="fab fa-facebook-f social"></a>
-                    <a href="#" class="fab fa-twitter social"></a>
-                    <a href="#" class="fab fa-instagram social"></a>
-                </div> <!-- su JS --> 
+                <div class="menu">
+                    <button class="burger burger-line">
+                        <span></span>
+                    </button>
+                </div>
+                
+                <div class="navbar navbar--collapse">
+                    <nav class = "nav"> <!-- su JS -->  
+                        <a class="link active" href="#">Home</a>
+                        <a class="link" href="#services">Services</a>
+                        <a class="link" href="#resume">Resume</a>
+                        <a class="link" href="#projects">Projects</a>
+                        <a class="link" href="#blog">Blog</a>
+                        <a class="link" href="#contact">Contact</a>
+                        <a class="link" href="#">Pages</a>
+                    </nav>
+                    <div class = "socials">
+                        <a href="#" class="fab fa-facebook-f social"></a>
+                        <a href="#" class="fab fa-twitter social"></a>
+                        <a href="#" class="fab fa-instagram social"></a>
+                    </div> <!-- su JS -->
+                </div>
+                
             </div>      
         </div>
     </header>
@@ -308,16 +317,22 @@
     </section>
     <!-- section PROJECT end -->
 
-    <div class="section-title">
+    <!-- <div class="section-title">
         <h2 class="header-section-title">What do I offer ?</h2>
         <img class="section-title-decoration" src="./img/section-title-decoration.png" alt="section-title-decoration">
         <p class="paragraph-section-title">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
-    </div>
+    </div> -->
 
     <!-- section SERVICES begin -->
-    <section class="container services">
-        <div class="row">
-        </div>
+    <section id="services" class="container services">
+            <div class="col-12">
+            <div class="section-title">
+                <h2 class="header-section-title">What do I offer ?</h2>
+                <img class="section-title-decoration" src="./img/section-title-decoration.png" alt="section-title-decoration">
+                <p class="paragraph-section-title">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            </div>
+            </div>
+        <div class="row"></div>
     </section>
     <!-- section SERVICES end -->
 
@@ -404,20 +419,25 @@
 
     <!-- section FREELANCE begin -->
     <section class="container-fluid">
-        <div class="row">
-            FREELANCE
+        <div class="freelance-section">
+            <h3 class="freelance">I Am Available For Freelancer Projects.</h3>
+            <p class="freelance">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            <div>
+                <a href="#" class="btn btn-primary freelance">Hire me </a>
+            </div>
         </div>
     </section>
     <!-- section FREELANCE end -->
 
     <!-- section CONTACT begin -->
-    <div class="section-title">
-        <h2 class="header-section-title">Contact me</h2>
-        <img class="section-title-decoration" src="./img/section-title-decoration.png" alt="section-title-decoration">
-        <p class="paragraph-section-title">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
-    </div>
-
-    <section class="container contact-me">
+    <section id="contact" class="container contact-me">
+        <div class="row d-flex justify-content-center">
+            <div class="section-title">
+                <h2 class="header-section-title">Contact me</h2>
+                <img class="section-title-decoration" src="./img/section-title-decoration.png" alt="section-title-decoration">
+                <p class="paragraph-section-title">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            </div>
+        </div>
         <div class="row">
             <div class="col-4 col-xs-12">
                 <img src="./img/phone.png" alt="phone" class="contact-me-decoration">
@@ -460,16 +480,6 @@
             <div class="col-12 contact-form-submit">
                 <input type="Submit" value="Send Message" class="btn-submit">
             </div>
-        </div>
-    </section>
-
-
-
-
-
-    <section class="container">
-        <div class="row">
-            CONTACT
         </div>
     </section>
     <!-- section CONTACT end -->
