@@ -1,0 +1,97 @@
+:root {
+    --burgerColor: #3c4858;
+    --burgerClose: #3c4858;
+    --burgerBorder: transparent;
+    --burgerBg: transparent;
+}
+
+.burger {
+    display: inline-block;
+    position: relative;
+	width: 52px;
+	height: 52px;
+	font-size: 0;
+	cursor: pointer;
+    z-index: 999;
+    border: 1px solid var(--burgerBorder);
+}
+
+    .burger:focus {
+        outline: none;
+    }
+
+    .burger > span {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 13px;
+        right: 13px;
+        height: 2px;
+        background-color: var(--burgerColor);
+    }
+
+    .burger > span::before,
+    .burger > span::after {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--burgerColor);
+    }
+
+    .burger > span::before {
+        top: -8px;
+    }
+
+    .burger > span::after {
+        bottom: -8px;
+    }
+
+    .burger-line {
+        background-color: var(--burgerBg);
+    }
+
+    .burger-line > span {
+        transition: background 0s 0.3s;
+    }
+
+    .burger-line > span::before,
+    .burger-line > span::after {
+        transition-duration: 0.3s, 0.3s;
+	    transition-delay: 0.3s, 0s;
+    }
+
+    .burger-line > span::before {
+        transition-property: top, transform;
+    }
+
+
+    .burger-line > span::after {
+        transition-property: bottom, transform; 
+    }
+
+    .burger-line.active span {
+        background-color: transparent;
+
+    }
+
+    .burger-line.active span::before {
+        top: 0;
+        transform: rotate(-45deg);
+        background-color: --var(--burgerClose);
+    }
+
+    .burger-line.active span::after {
+        bottom: 0;
+        transform: rotate(45deg);
+        background-color: --var(--burgerClose);
+    }
+
+    .burger-line.active span::before,
+    .burger-line.active span::after {
+        transition-delay: 0s, 0.3s; 
+    }
+
+
