@@ -99,10 +99,6 @@ class PortfolioBtn{
          const photosDOMs = document.querySelectorAll('.portfolio-photo')
          
          photosDOMs[0].classList.add('portfolio-photo-hide')
-         
-         photosDOMs[0].addEventListener('transitionend', () =>{
-            photosDOMs[0].classList.add('portfolio-photo-hide1')
-         })
     }
 }
 
