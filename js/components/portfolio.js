@@ -95,11 +95,38 @@ class PortfolioBtn{
         btnDOMs.forEach(btn => { btn.classList.remove('portfolio-btn-active')})
         btn.classList.add('portfolio-btn-active')
     }
-    // filterPhotos(btn){
-    //      const photosDOMs = document.querySelectorAll('.portfolio-photo')
+    filterPhotos(btn){
+         const photosDOMs = document.querySelectorAll('.portfolio-photo')
          
-    //      photosDOMs[0].classList.add('portfolio-photo-hide')
-    // }
+        // if(btn.innerText === 'ALL')
+            if(btn.innerText.toUpperCase() === 'ALL')
+            {
+                console.log('ALL BTN PRESSED');
+                photosDOMs.forEach(el => {
+                    el.classList.remove('portfolio-photo-hide')
+                    // el.classList.remove('portfolio-photo-displayNon')
+
+                });
+            }
+
+            if(btn.innerText.toUpperCase() === 'NATURAL'){
+                console.log('NATURAL BTN PRESSED');
+                const idxs = [1,3,4]
+                //0,2,5 lieka
+                for (let i = 0; i < idxs.length; i++) {
+                    const idx = idxs[i];
+                    
+                    photosDOMs[idx].classList.add('portfolio-photo-hide')
+
+                    // photosDOMs[idx].addEventListener(('transitionend'), () => {
+                    //     photosDOMs[idx].classList.add('portfolio-photo-displayNon') 
+                    // })
+
+                    photosDOMs[2].classList.add('porfolio-photo-move')
+                }
+            }
+
+    }
 }
 
 export {Portfolio, PortfolioBtn}
