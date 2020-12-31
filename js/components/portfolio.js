@@ -104,6 +104,7 @@ class PortfolioBtn{
                 console.log('ALL BTN PRESSED');
                 photosDOMs.forEach(el => {
                     el.classList.remove('portfolio-photo-hide')
+                    // el.style.display = null;
                     // el.classList.remove('portfolio-photo-displayNon')
 
                 });
@@ -118,11 +119,9 @@ class PortfolioBtn{
                     
                     photosDOMs[idx].classList.add('portfolio-photo-hide')
 
-                    // photosDOMs[idx].addEventListener(('transitionend'), () => {
-                    //     photosDOMs[idx].classList.add('portfolio-photo-displayNon') 
-                    // })
-
-                    photosDOMs[2].classList.add('porfolio-photo-move')
+                    photosDOMs[idx].addEventListener(('transitionend'), () => {
+                        photosDOMs[idx].style.position = 'absolute';
+                    })
                 }
             }
 
