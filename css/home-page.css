@@ -9,12 +9,15 @@
 @import './components/footer.css';
 @import './components/form.css';
 @import './components/gallery.css';
+@import './components/burger-menu.css';
 @import './components/header.css';
 @import './components/hero-home.css';
 @import './components/pricing.css';
 @import './components/testimonials.css';
 @import './components/mouse.css';
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+@import './components/contact-me.css';
+@import './components/freelance.css';
 @import './components/section-title.css';
 /*
 ***********************************************
@@ -103,7 +106,96 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
         margin-left: 40px;
     }
 }
+
 /* hobbies */
+.interests-desc {
+    -webkit-transition: all 0.2s ease;
+    transition:all 0.2s ease;
+}
+
+.interests-desc .hobbies:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 55px;
+    background: #e9ecef;
+    z-index: 1;
+}
+
+.interests-desc .icon {
+    width: 40px;
+    -webkit-transition: all 0.2 ease;
+    transition: all 0.2 ease;
+}
+
+.interests-desc .title {
+    font-weight: 500;
+}
+
+.interests-desc:hover {
+    background: #fff;
+    -webkit-box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+            box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+            -webkit-transform: translateY(-5px);
+                    transform: translateY(-5px);
+}
+
+.interests-desc:hover .icon {
+    color: #e54b4b
+}
+
+.rounded {
+    border-radius: 7px;
+}
+
+.rounded-pill {
+    border-radius: 30px;
+}
+
+.bg-light {
+    background-color:#f9fafd;
+}
+
+.pb-3, .py-3 {
+    padding-bottom: 1rem;
+}
+
+.py-3 {
+    padding-top: 1rem;
+}
+
+.px-2 {
+    padding-left: .8rem;
+    padding-right: .5rem;
+}
+
+.position-relative {
+    position:relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mr-4 {
+    margin-right: 1.5rem;
+}
+
+.section-title {
+    position:relative;
+    margin-bottom: 30px;
+}
+
+.mt-100 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.container .section-title {
+    margin-top: 0px;
+}
+
 /* project done */
 
 .projects{
@@ -147,6 +239,7 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 /* services */
 .container.services{
+    padding-top: 100px;
     padding-bottom: 100px;
     background-color: #f9fafd
 }
@@ -405,7 +498,262 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 
 
 /* skill */
+.skill-logo{
+    background: scroll center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    max-height: 900px;
+}
+.skill-right{
+    align-self: center;
+    margin-bottom: 200px;
+}
+
+.section-title.skill{
+    width: 90%;
+    justify-self: center;
+}
+
+.skill-buttons{
+    margin-right: 50px;   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+    .skill-btn{
+        width: 50%;
+        margin-top: 30px;
+        text-align: center;
+        border: 1px solid #e9ecef;
+        background-color: #ffffff;
+        color: #161c2d;
+        box-shadow: none; 
+        outline:none;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    .skill-btn-active{
+        background-color: #e54b4b;
+        color:  #e9ecef;
+    }
+    .skill-buttons .skill-btn:hover{
+        background-color:#e54b4b;
+    }
+.skill-graphs{
+    align-self: center;
+}
+
+    .skill-progress-bar{
+        margin-top: 60px;
+    }
+        .skill-progress-visibile{
+            position: relative;
+            border-bottom: #e9ecef solid 10px;
+            width: 100%;
+            text-align: start;
+        }
+        .skill-progress-active{
+            position: absolute;
+            bottom: -10px;
+            left:0;
+            border-bottom: #e54b4b solid 10px;
+            width: 0;
+            text-align: end;
+        }
+            .skill-progress-active > .skill-level{
+                position: absolute;
+                left: 97%;
+                bottom: 0%;
+                margin-bottom: 10px;
+                font-family: "Montserrat", sans-serif;
+                line-height: 1.5;
+                font-weight: 600;
+            }
+           .skill-progress-visibile .title{
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            margin-bottom: 10px;
+            font-family: "Montserrat", sans-serif;
+            line-height: 1.5;
+            font-weight: 400;
+            } 
+
+@media screen and (max-width: 1500px) {
+    .skill-btn{
+        width: 70%;
+    }   
+}
+@media screen and (max-width: 1200px) {
+    .skill-btn{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .skill-logo{
+        height: 1200px;
+        max-height: 1200px;
+        width: 70%;
+        margin-right: 0;     
+        place-self: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .skill-btn{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    body > .skill.container-fluid{
+        grid-template-columns: 1fr 540px 1fr;
+    }
+    .skill.container-fluid > .row.skill-row{
+        grid-column: 2 / 3;
+    }
+    .skill-buttons{
+        margin-right: 0%;
+    }
+    .skill-logo{
+        display:none;
+    }
+    .section-title.skill {
+        margin:0;
+    }
+}
+    @media screen and (max-width: 575px) {
+        body > .skill.container-fluid{
+            grid-template-columns: 1fr;
+        }
+        .skill.container-fluid > .row.skill-row{
+            grid-column: 1 / 2;
+        }
+}
+
 /* portfolio */
+.container.portfolio{
+    background-color: #f9fafd;
+}
+
+.portfolio > .row > .portfolio-title{
+    margin-top: 150px
+}
+
+.portfolio-buttons{
+    text-align: center;
+    margin: 25px 0 50px 0;
+}
+    .portfolio-btn{
+       color: #3c4858;
+       background-color:#f9fafd;
+       font-size: 15px;
+       font-family: "Roboto", sans-serif;
+       font-weight: 400;
+       padding: 2px 16px;
+       line-height: 30px;
+       border: 1px #f9fafd;
+       border-radius: 7px;
+    }
+    .portfolio-btn:not(:first-of-type){
+        margin-left: 8px
+    }
+    .portfolio-btn:hover{
+        color:#f9fafd;
+        background-color: #e54b4b;
+        transition: all 0.4s ease-in-out;
+    }
+    .portfolio-btn:focus{
+       outline: none;
+    }
+    .portfolio-btn-active{
+        color:#f9fafd;
+        background-color: #e54b4b;
+    }
+
+.portfolio-photo{
+    box-shadow: 0 0 8px rgba(60, 72, 88, 0.15);
+    opacity : 100%;
+    width : 100%;
+    height : 100%;
+}
+    .portfolio-img-cont{
+        background-color: rgba(60, 72, 88, 0.65);
+        overflow: hidden;
+        position: relative;
+    }
+        .portfolio-img{
+            max-width: 100%;
+            
+        }
+        .svg-cont{
+            height: 45px;
+            width: 45px;
+            line-height: 43px;
+            background-color: #3c4858;
+            position: absolute;
+            bottom:30%;
+            right: 44%;
+            opacity: 0;
+            transform: translateY(0px);
+            transition: all 0.5s ease;
+            border-radius: 30px;
+            text-align:center;
+        }
+        .portfolio-hover-img{
+            color: #f9fafd;
+            margin-top: 8px;
+        }
+.portfolio-photo:hover{
+    box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+    transform: translateY(-5px);
+    transition: all 0.5s ease;
+
+}
+.portfolio-photo:hover .portfolio-img{
+    transition: all 0.5s ease;  
+    opacity: 0.2;
+    transform: rotate(2deg) scale(1.15);
+}
+.portfolio-photo:hover .svg-cont{
+    transform: translateY(-40px);
+    transition: all 0.5s ease;
+    display: block;
+    opacity: 1;
+}
+.svg-cont:hover{
+    background-color: white;
+}
+.svg-cont:hover .portfolio-hover-img{
+    color: #e54b4b;
+}
+.portfolio-text{
+    padding: 30px 0;
+    text-align:center;
+}
+    .portfolio-h5{
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.5;
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .portfolio-p{
+        font-family: "Roboto", sans-serif;
+        overflow-x: hidden !important;
+        font-size: 15px;
+        color: #161c2d;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .portfolio-h5:hover{
+        color: red;
+    }
+    .portfolio-photo-hide{
+        opacity : 0;
+        width : 0;
+        height : 0;
+        transition : all 2s ease-in-out;
+    }
 /* testimonial */
 /* blog */
 /* freelancer */

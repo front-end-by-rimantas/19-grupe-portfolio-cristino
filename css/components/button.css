@@ -22,10 +22,43 @@
 
 .btn-second {
     color: #e54b4b;
-    margin-left: 10px;
 }
 
 .btn-second:hover {
     background-color: #e54b4b;
     color: #ffffff;
 }
+
+.btn-submit {
+    display: inline-block;
+    width: 146px;
+    height: 40px;
+    float: right;
+    margin: 15px 8px 8px 0px;
+    background-color: #e54b4b;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 3px 5px 0 rgba(229, 75, 75, 0.3);
+    overflow: visible;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    border: 1px solid #e54b4b;
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+    .btn-submit:hover {
+        background-color: #F50000;
+    }
+
+.btn-second:hover {
+    background-color: #e54b4b;
+    color: #ffffff;
+}
+

@@ -6,6 +6,7 @@
     background-color: #f9fafd;
     background-size: cover;
     background-position: center center;
+    position: relative;
 } 
 
     .hero-text {
@@ -14,6 +15,7 @@
         flex-flow: column;
         flex-wrap: wrap;
         gap: 15px;
+        padding-bottom: 92px;
     }
 
     h1.hero {
@@ -39,4 +41,8 @@
         line-height: 1.8;
         color: #8492a6;
         margin-bottom: 16px;
+    }
+
+    .hero .btn-second {
+        margin-left: 10px;
     }
