@@ -1,0 +1,130 @@
+.blog {
+    padding: 100px 0;
+    background-color: #f9fafd;
+}
+
+.blog-mrg {
+    margin-top: 24px;
+}
+
+.gap {
+    grid-gap: 30px;
+}
+
+.blog__card {
+    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+}
+
+.blog__card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    transition: all 0.2s ease-out;
+    top: -4px;
+}
+
+
+
+.blog__card-image {
+    border-radius: 7px 7px 0 0;
+    max-width: 100%;
+    display: block
+}
+
+.blog__card-content {
+    padding: 16px 24px;
+}
+
+.blog__card-author,
+.blog__card-brand {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+
+.blog__card-author::before {
+    display: inline-block;
+    content: "\f007";
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.blog__card-brand {
+    float: right;
+}
+
+.blog__card-title {
+    margin-top: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.blog__card-title-link {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #3c4858;
+}
+
+.blog__card-title-link:hover {
+    color: #e54b4b;
+}
+
+
+.blog__card-title::after {
+    display: block;
+    content: "";
+    margin-top: 16px;
+    border-top: 1px solid #e9ecef;
+}
+
+.blog__card-btn {
+    border: none;
+    color: #3c4858;
+    box-shadow: none;
+    padding: 0;
+    position: relative;
+}
+
+.blog__card-btn:hover {
+    color: #e54b4b;
+}
+
+.blog__card-btn::after {
+    display: inline-block;
+    content: "\f054";
+    font-size: 13px;
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    margin-top: 1px;
+}
+
+.blog__card-calendar {
+    display: inline-flex;
+    align-items: center;
+    float: right;
+    color: #161c2d;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+
+.blog__card-calendar::before {
+    display: inline-block;
+    content: "\f271";
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+}
