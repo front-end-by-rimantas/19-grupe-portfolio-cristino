@@ -26,6 +26,8 @@ import {Portfolio, PortfolioBtn} from './components/portfolio.js'
 import { portfolioData,portfolioBtnData } from './data/portfolioData.js';
 /* testimonial */
 /* blog */
+import {Blog} from './components/Blog.js';
+import {blogData} from './data/blogData.js';
 /* freelancer */
 /* contact */
 /* footer */
@@ -76,6 +78,10 @@ new PortfolioBtn({
 })
 /* testimonial */
 /* blog */
+new Blog({
+    selector: '.blog .blog-row',
+    data: blogData
+});
 /* freelancer */
 /* contact */
 /* footer */
