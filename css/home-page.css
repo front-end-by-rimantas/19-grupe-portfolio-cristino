@@ -757,10 +757,9 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
         transition : all 500ms ease-in-out;
         
     }
-
-    /* .porfolio-photo-move{
-        transform: translate(-400px);
-    } */
+    .porfolio-photo-hidden{
+        position: absolute;
+    }
 /* testimonial */
 /* blog */
 /* freelancer */

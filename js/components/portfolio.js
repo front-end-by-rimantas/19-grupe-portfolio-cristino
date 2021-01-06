@@ -95,18 +95,16 @@ class PortfolioBtn{
         btnDOMs.forEach(btn => { btn.classList.remove('portfolio-btn-active')})
         btn.classList.add('portfolio-btn-active')
     }
+    
     filterPhotos(btn){
          const photosDOMs = document.querySelectorAll('.portfolio-photo')
          
-        // if(btn.innerText === 'ALL')
             if(btn.innerText.toUpperCase() === 'ALL')
             {
                 console.log('ALL BTN PRESSED');
                 photosDOMs.forEach(el => {
                     el.classList.remove('portfolio-photo-hide')
-                    // el.style.display = null;
-                    // el.classList.remove('portfolio-photo-displayNon')
-
+                    el.classList.remove('porfolio-photo-hidden')
                 });
             }
 
@@ -118,10 +116,33 @@ class PortfolioBtn{
                     const idx = idxs[i];
                     
                     photosDOMs[idx].classList.add('portfolio-photo-hide')
+                    setTimeout(() => {
+                        photosDOMs[idx].classList.add('porfolio-photo-hidden')
+                    },500)
+                }
+            }
 
-                    photosDOMs[idx].addEventListener(('transitionend'), () => {
-                        photosDOMs[idx].style.position = 'absolute';
-                    })
+            if(btn.innerText.toUpperCase() === 'CREATIVE'){
+                console.log('CREATIVE BTN PRESSED');
+                const idxs = [0,3]
+                const idxs2 = [1,2,4,5]
+               
+                for (let i = 0; i < idxs.length; i++) {
+                    const idx = idxs[i];
+                    
+                    photosDOMs[idx].classList.add('portfolio-photo-hide')
+                    setTimeout(() => {
+                        photosDOMs[idx].classList.add('porfolio-photo-hidden')
+                    },500)
+                }
+
+                for (let i = 0; i < idxs2.length; i++) {
+                    const idx = idxs2[i];
+                    
+                    photosDOMs[idx].classList.remove('portfolio-photo-hide')
+                    setTimeout(() => {
+                        photosDOMs[idx].classList.remove('porfolio-photo-hidden')
+                    },500)
                 }
             }
 
