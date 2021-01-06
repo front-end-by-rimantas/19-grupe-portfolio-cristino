@@ -111,14 +111,23 @@ class PortfolioBtn{
             if(btn.innerText.toUpperCase() === 'NATURAL'){
                 console.log('NATURAL BTN PRESSED');
                 const idxs = [1,3,4]
-                //0,2,5 lieka
+                const idxs2 = [0,2,5]
                 for (let i = 0; i < idxs.length; i++) {
                     const idx = idxs[i];
                     
                     photosDOMs[idx].classList.add('portfolio-photo-hide')
-                    setTimeout(() => {
-                        photosDOMs[idx].classList.add('porfolio-photo-hidden')
-                    },500)
+                    // setTimeout(() => {
+                    //     photosDOMs[idx].classList.add('porfolio-photo-hidden')
+                    // },500)
+                }
+
+                for (let i = 0; i < idxs2.length; i++) {
+                    const idx = idxs2[i];
+                    
+                    photosDOMs[idx].classList.remove('portfolio-photo-hide')
+                    // setTimeout(() => {
+                    //     photosDOMs[idx].classList.remove('porfolio-photo-hidden')
+                    // },500)
                 }
             }
 
@@ -131,18 +140,66 @@ class PortfolioBtn{
                     const idx = idxs[i];
                     
                     photosDOMs[idx].classList.add('portfolio-photo-hide')
-                    setTimeout(() => {
-                        photosDOMs[idx].classList.add('porfolio-photo-hidden')
-                    },500)
+                    // setTimeout(() => {
+                    //     photosDOMs[idx].classList.add('porfolio-photo-hidden')
+                    // },500)
                 }
 
                 for (let i = 0; i < idxs2.length; i++) {
                     const idx = idxs2[i];
                     
                     photosDOMs[idx].classList.remove('portfolio-photo-hide')
-                    setTimeout(() => {
-                        photosDOMs[idx].classList.remove('porfolio-photo-hidden')
-                    },500)
+                    // setTimeout(() => {
+                    //     photosDOMs[idx].classList.remove('porfolio-photo-hidden')
+                    // },500)
+                }
+            }
+            
+            if(btn.innerText.toUpperCase() === 'PERSONAL'){
+                console.log('PERSONAL BTN PRESSED');
+                const idxs = [2,4,5]
+                const idxs2 = [0,1,3]
+               
+                for (let i = 0; i < idxs.length; i++) {
+                    const idx = idxs[i];
+                    
+                    photosDOMs[idx].classList.add('portfolio-photo-hide')
+                    // setTimeout(() => {
+                    //     photosDOMs[idx].classList.add('porfolio-photo-hidden')
+                    // },500)
+                }
+
+                for (let i = 0; i < idxs2.length; i++) {
+                    const idx = idxs2[i];
+                    
+                    photosDOMs[idx].classList.remove('portfolio-photo-hide')
+                    // setTimeout(() => {
+                    //     photosDOMs[idx].classList.remove('porfolio-photo-hidden')
+                    // },500)
+                }
+            }
+
+            if(btn.innerText.toUpperCase() === 'PHOTOGRAPHY'){
+                console.log('PHOTOGRAPHY BTN PRESSED');
+                const idxs = [0,2,5]
+                const idxs2 = [1,3,4]
+               
+                for (let i = 0; i < idxs.length; i++) {
+                    const idx = idxs[i];
+                    
+                    photosDOMs[idx].classList.add('portfolio-photo-hide')
+                    // setTimeout(() => {
+                    //     photosDOMs[idx].classList.add('porfolio-photo-hidden')
+                    // },500)
+                }
+
+                for (let i = 0; i < idxs2.length; i++) {
+                    const idx = idxs2[i];
+                    
+                    photosDOMs[idx].classList.remove('portfolio-photo-hide')
+                    // setTimeout(() => {
+                    //     photosDOMs[idx].classList.remove('porfolio-photo-hidden')
+                    // },500)
                 }
             }
 
