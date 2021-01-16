@@ -21,7 +21,9 @@ class Portfolio{
         }       
         this.render()
     }
-
+    set(){
+        
+    }
     render(){
         let HTML = "";
         for(let item of this.data)
@@ -93,7 +95,7 @@ class PortfolioBtn{
 
     toggleActive(btn,btnDOMs){
         btnDOMs.forEach(btn => { btn.classList.remove('portfolio-btn-active')})
-        btn.classList.add('portfolio-btn-active')
+        btn.classList.add('portfolio-btn-actived')
     }
     
     filterPhotos(btn){
